@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+header{
+    font-size: 2rem;
+}
+
+.container_loginAs{
+    position: fixed !important;
+    width: 900px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 20px;
+    background: #EDE4FF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.boxes-loginAs{
+    width: 300px;
+    height: 330px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.20);
+    transition: all 0.3s;
+}
+
+.boxes-loginAs:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 0 0.2rem rgba(140, 82, 255, 0.50) !important;
+    background-color: rgba(140, 82, 255, 0.25);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.img-landlord{
+    width: 80%;
+}
+
+#chevron-down-avatar2{
+    display: inline-block;
+}
+
+#chevron-up-avatar2{
+    display: none;
+}
+
+.p-label{
+    font-size: 1rem;
+}
+
+/* `````````````
+    MEDIA QUERIES 
+```````````````` */
+
+/* md ``````` */
+@media only screen and (max-width: 992px) {
+
+    .container_loginAs{
+        width: 800px;
+    }
+}
+
+/* If [device width] is less than or equal to 768px (md), then... */
+/* sm - xs `````````` */
+@media only screen and (max-width: 768px) {
+
+    .container_loginAs{
+        width: 420px;
+    }
+
+    .boxes-loginAs{
+        height: 100px;
+    }
+
+    .columns{
+        justify-content: center !important;
+        padding: 40px 0 0 0 !important;
+    }
+
+    .btn-margin{
+        margin-top: 0 !important;
+        font-size: calc(1rem + 4px);
+    }
+}
+
+

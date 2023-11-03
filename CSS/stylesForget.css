@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* 100% */
+#container_forget{
+    position: relative;
+    width: 950px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* 100% */
+.overlay_container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.20);
+    border-radius: 20px;
+}
+
+.overlay_container .box{
+    position: relative;
+    width: 50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: none;
+    background: #bab1ff;
+
+    background-image: url('../imgs/Forgot1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* register page */
+.overlay_container .box.active{
+    background-image: url('../imgs/forgot2.png');
+    border-radius: 20px 0 0 20px;
+}
+
+.overlay_container .box.forgot2_box{
+    border-radius: 0 20px 20px 0;
+}
+
+.input_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 9;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+}
+
+.input_container .forgot{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.input_container.active{
+    left: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+.input_container .forgot1{
+    transition-delay: 0.25s;
+}
+
+.input_container.active .forgot1{
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.input_container .forgot2{
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.input_container.active .forgot2{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.forgot1 > header{
+    font-size: 2rem;
+}
+
+.forgot1 > p,
+.forgot2 > p{
+    width: 80%;
+    font-size: calc(1rem - 2px);
+}
+
+.box > p{
+    font-size: calc(1rem - 2px);
+    margin-top: 460px !important;
+}
+
+.login_link{
+    color: #8c52ff;
+}
+
+.login_link:hover{
+    color: #8c52ff;
+    font-weight: 600;
+}
+
+.login_link:link{
+    text-decoration: none;
+    color: #8c52ff;
+}
+
+.login_link{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: calc(1rem - 2px);
+    background: none;
+    border: none;
+    color: #33393b;
+    font-weight: 600 !important;
+}
+/* 
+*****************
+ */
+
+ .form_blocks > input{
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px !important;
+}
+
+.forgot_form{
+    width: 100%;
+}
+
+.form_inputs{
+    position: relative;
+    width: 80%;
+}
+
+.login_inputs{
+    height: 40px;
+    font-size: 1rem;
+    color: #495055;
+    border: 2px solid  #D9D9D9;
+    outline:none;
+    border-radius: 15px;
+}
+
+.input_ht{
+    height: 40px;
+    font-size: 1rem;
+    color: #495055;
+    padding: 15px;
+    border: 2px solid  #D9D9D9;
+    outline:none;
+}
+
+.div_email{
+    width: 100%;
+}
+
+
+.form_inputs input#rEmail {
+    width: 99%;
+    color: #33393b !important;
+}
+
+.form_inputs span.placeholder {
+    position: absolute;
+    top: 8px;
+    left: 17px;
+    margin: 13px 0;
+    padding: 0 4px;
+    color:  #6c757d;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+.form_inputs input:valid + span.placeholder,
+.form_inputs input:focus + span.placeholder,
+.form_inputs input:not(:placeholder-shown)~span.placeholder{
+    transform: scale(0.8) translateY(-25px);
+    background: #fff;
+    transition: all 0.2s;
+}
+
+
+#btn_send{
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #8c52ff !important;
+}
+
+#btn_send:hover{
+    background-color: #8548ff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2) !important;
+}
+
+
+
+/* //////////// */
+
+#rEmail:hover,
+.input_words:hover
+{
+    box-shadow: 0 0 0 0.2rem rgba(140, 82, 255, 0.25) !important;
+}
+
+#rEmail:focus,
+.input_words:focus
+{
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+    border-color: #8C52FF !important;
+}
+
+#datepicker_iconspan:hover,
+#datepicker_iconspan:focus{
+    background-color: rgba(140, 82, 255, 0.50);;
+}
+
+
+/* //////////// */
+.alert{
+    width: 80%;
+    margin-top: 80px !important;
+}
+
+.alert > header{
+    font-size: 2rem;
+}
+
+.buttons{
+    position: absolute;
+    height: 40px;
+    top: 400px;
+    width: 65%;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: 600 !important;
+    border: none;
+}
+
+.inputs{
+    font-size: 1rem;
+    color: #495055;
+    border: 2px solid  #D9D9D9;
+    outline:none;
+    border-radius: 15px;
+}
+
+.buttons:hover, 
+.buttons:focus{
+    box-shadow: 0 0 0 0.2rem rgba(140, 82, 255, 0.25) !important;
+}
+
+/*/////// PHRASES /////////*/
+
+.input_words{
+    width: 100%;
+    color: #33393b !important;
+}
+
+.input_words + span.placeholder{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    margin: 13px 0;
+    padding: 0 4px;
+    color:  #6c757d;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+/* //////////// */
+
+@keyframes btn_anim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* ************* 
+MEDIA QUERIES 
+************* */
+
+/* If [device width] is less than or equal to 1200px (xl), then... */
+/* lg */
+@media only screen and (max-width: 1200px) {
+
+    .forgot1 > header{
+        font-size: calc(2rem - 5px)
+    }
+}
+
+/* If [device width] is less than or equal to 768px (md), then... */
+/* sm - xs */
+@media only screen and (max-width: 992px) {
+
+    .container{
+        max-width: 420px;
+        height: 750px !important;
+        max-height: 750px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .container .overlay_container{
+        top: 0;
+        height: 100%;
+    }
+
+    .input_container{
+        width: 100%;
+        height: 660px;
+        top: -20px;
+        border-radius:  20px 20px 0 0;
+    }
+
+    .input_container.active{
+        left: 0;
+        top: 110px;
+        border-radius: 0 0 20px 20px;
+        height: 660px;
+    }
+
+    .overlay_container .box{
+        background: none;
+        background-color: #BAB1FF;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        border-radius: 0 0 20px 20px; 
+    }
+
+    .overlay_container .box.active{
+        border-radius: 20px 20px 0 0;
+        background-color: #BAB1FF;
+        top: 0;
+    }
+
+    .overlay_container .box.forgot2_box{
+        border-radius: 0 0 20px 20px;
+        background-color: #BAB1FF;
+    }
+
+    .overlay_container .box.forgot2_box{
+        border-radius: 0 0 20px 20px;
+        background-color: #BAB1FF;
+    }
+
+    .box.forgot2_box > p{
+        /* background-color: #cb6ce6; */
+        margin-top: 45px !important;
+    }
+
+    .box.forgot1_box > p {
+        /* background-color: #BAB1FF !important; */
+        margin-top: -25px !important;
+    }
+
+    .alert{
+        width: 80%;
+        margin-top: 30px !important;
+    }
+
+    #btn_send{
+        top: 400px;
+    }
+}
+/* loader */
+.loader {
+    display: none;
+    text-align: center;
+    border: 3px solid gray;
+    position: absolute;
+    top: 280px;
+    left: auto;
+    border-radius: 50%;
+    border-top: 3px solid white;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  @-webkit-keyframes spin {
+    0% { 
+        -webkit-transform: rotate(0deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(360deg); 
+    }
+  }
+  
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+  }
+
+

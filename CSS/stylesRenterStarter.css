@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.container-start-renter{
+    margin-top: 85px !important;
+    overflow-y: auto !important;
+}
+
+/* active class = register page */
+.container-renter{
+    position: fixed;
+    width: 1150px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 20px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.20);
+    border-radius: 20px;
+}
+
+/* default page - login page */
+.bg .box{
+    position: relative;
+    width: 50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+    border: none;
+
+    background-image: url('../imgs/bg_login.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* register page */
+.bg .box.active{
+    background-image: url('../imgs/bg_register.png');
+    border-radius: 20px 0 0 20px;
+}
+
+.bg .box.register{
+    border-radius: 0 20px 20px 0;
+}
+
+.hover_btns{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    font-weight: 600;
+}
+
+.form_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 9;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+}
+
+.form_box .form{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.form_box .form .divLogin{
+    width: 90%;
+}
+
+.form_box.active{
+    left: 50%;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.form_box .form_login{
+    transition-delay: 0.25s;
+}
+
+.form_box.active .form_login{
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.form_box .form_register{
+    left: 100%;
+    transition-delay: 0s;
+}
+.form_box.active .form_register{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+
+.form_login header, .form_register header{
+    font-size: calc(2rem + 2px);
+}
+
+#btn_loginhover:hover{
+    color: #8C52FF;
+}
+
+#btn_registerhover:hover{
+    color: #8C52FF;
+}
+
+/* ************* 
+LOGIN PAGE 
+************* */
+
+.box > h2.renting_txt{
+    text-align: center;
+    font-weight: 600;
+}
+
+.box > p{
+    font-size: 1rem;
+}
+
+/* login form-inputs */
+.divLogin{
+    width: 100%;
+}
+
+.div_form{
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.form_inputs {
+    position: relative;
+}
+
+.login_inputs{
+    height: 50px;
+    font-size: 1rem;
+    color: #495055;
+    padding: 15px !important;
+    border: 2px solid  #D9D9D9;
+    outline:none;
+}
+
+.form_inputs input#login_email {
+    width: 100%;
+    border-radius: 15px;
+    color: #33393b !important;
+}
+
+#login_password{
+    width: 90%;
+    border-radius: 15px 0 0 15px;
+    color: #33393b !important;
+}
+
+#toggle_loginpass{
+    height: 50px;
+    width: 10%;
+    border-radius: 0 15px 15px 0;
+    border: 2px rgba(140, 82, 255, 0.25);
+    background: rgba(140, 82, 255, 0.25);
+}
+
+#toggle_loginpass> i.bi{
+    position: relative;
+    top: 13px;
+}
+
+#toggle_loginpass:hover{
+    background: rgba(140, 82, 255, 0.40);
+}
+
+.form_inputs span.placeholder {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    margin: 13px 0;
+    padding: 0 4px;
+    color:  #6c757d;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+.form_inputs input:valid + span.placeholder,
+.form_inputs input:focus + span.placeholder,
+.form_inputs input:not(:placeholder-shown)~span.placeholder{
+    transform: scale(0.8) translateY(-31px);
+    background: #fff;
+    transition: all 0.2s;
+}
+
+.form_inputs input:focus{
+    color: #284B63;
+}
+  
+.form_inputs input:focus + span.placeholder {
+    color: #284B63;
+}
+
+#btn_forgot{
+    color: #284B63;
+}
+
+#btn_forgot:link{
+    text-decoration: none;
+}
+
+#btn_forgot:hover{
+   font-weight: 600;
+}
+
+#btn_login{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background: #8C52FF;
+    border: none;
+    font-weight: 600;
+}
+
+#btn_login:hover,
+#btn_login:focus{
+    box-shadow: 0 5px 5px rgba(140, 82, 255, 0.25);
+    font-weight: 600;
+}
+
+.form_inputs input:hover,
+#rOccupation:hover{
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.form_inputs input:focus,
+#rOccupation:focus{
+    color: #284B63;
+    border-color: #8C52FF !important;
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+
+
+
+/* ************* 
+REGISTRATION PAGE
+************* */
+.form_register{
+    margin-top: 500px;
+}
+
+.input_ht{
+    height: 40px;
+    font-size: 1rem;
+    color: #495055;
+    padding: 15px;
+    border: 2px solid  #D9D9D9;
+    outline:none;
+}
+
+div.names > input{
+    width: 50%;
+    border-radius: 15px;
+    padding-left: 15px !important;
+    color: #33393b !important;
+}
+
+.form_blocks > input{
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px !important;
+    color: #33393b !important;
+}
+
+/* inputs with span - password, bday, number */
+.with_span{
+    width: 100%;
+}
+
+.input_left{
+    width: 90%;
+    border-radius: 15px 0 0 15px;
+    padding-left: 15px !important;
+}
+
+.span_right{
+    width: 10%;
+    border-radius: 0 15px 15px 0;
+    border: 2px rgba(140, 82, 255, 0.25);
+    background: rgba(140, 82, 255, 0.25);
+}
+
+.span_left{
+    width: 50%;
+    background:rgba(140, 82, 255, 0.25);
+    border: 2px rgba(140, 82, 255, 0.25);
+    font-size: calc(1rem - 3px);
+    padding-left: 15px !important;
+    border-radius: 15px 0 0 15px;
+}
+
+.span_right:hover,
+.span_bday:hover{
+    background: rgba(140, 82, 255, 0.40);
+}
+
+.span_icons{
+    position: relative;
+    top: 8px;
+    left: -1px;
+}
+
+.date_icon{
+    position: relative;
+    top: 10px;
+    left: -4px;
+}
+
+.input_right{
+    border-radius: 0 15px 15px 0;
+    padding-left: 10px !important;
+}
+
+.col-md-6{
+    width: 49%;
+}
+
+.row{
+    column-gap: 10px;
+}
+
+#rOccupation{
+    border-radius: 15px !important;
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    color: #495055;
+    border: 2px solid  #D9D9D9;
+    outline:none;
+    padding-left: 15px !important;
+}
+
+#rOccupation > option{
+    border-radius: 15px !important;
+}
+
+
+
+
+/* form placeholders */
+input#rFname + span.placeholder,
+input#rEmail + span.placeholder,
+.input_left + span.placeholder{
+    position: absolute;
+    top: 8px;
+    left: 17px;
+}
+
+input#rLname + span.placeholder{
+    position: absolute;
+    top: 8px;
+    left: 275px;
+}
+
+input#rNumber + span.placeholder,
+#datepicker_input + span.placeholder{
+    position: absolute;
+    top: 8px;
+    left: 65px;
+}
+
+.passes + span.placeholder,
+#rJobOther +span.placeholder{
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+#btn_register{
+    width: 100%; 
+    color: #fff;
+    border-radius: 15px;
+    background: #8C52FF;
+    border: none;
+    font-weight: 600;
+}
+
+#btn_register:hover, 
+#btn_register:focus{
+    box-shadow: 0 5px 5px rgba(140, 82, 255, 0.25);
+}
+
+.reg_inputs input:valid + span.placeholder,
+.reg_inputs input:focus + span.placeholder,
+.reg_inputs input:not(:placeholder-shown)~span.placeholder{
+    transform: scale(0.8) translateY(-23px);
+    background: #fff;
+}
+
+.datepicker-dropdown{
+    position: absolute;
+    top: 245px !important;
+}
+
+
+
+/* ************* 
+MEDIA QUERIES 
+************* */
+
+/* If [device width] is less than or equal to 1200px (xl), then... */
+/* lg */
+@media only screen and (max-width: 1200px) {
+
+    input#rLname + span.placeholder{
+        top: 8px;
+        left: 235px;
+    }
+
+    input#rNumber + span.placeholder{
+        left: 55px;
+    }
+
+    .row{
+        width: 100%;
+        column-gap: 8px !important;
+    }
+
+    .span_left{
+        width: 20%;
+        padding-left: 10px !important;
+    }
+
+    .input_right{
+        width: 80%;
+    }
+
+    #datepicker_input + span.placeholder{
+        position: absolute;
+        top: 8px;
+        left: 55px;
+    }
+}
+
+/* If [device width] is less than or equal to 992px (lg), then... */
+/* md */
+@media only screen and (max-width: 992px) {
+    
+    .container-start-renter{
+        height: 800px !important;
+    }
+
+    .box > h2.renting_txt{
+        font-size: calc(1rem + 8px);
+    }
+
+    .box >p, 
+    .box >p >button{
+        font-size: calc(1rem - 2px);
+    }
+
+    input#rLname + span.placeholder{
+        top: 8px;
+        left: 183px;
+    }
+
+    input#rNumber + span.placeholder{
+        left: 75px;
+    }
+
+    .input_left{
+        width: 80%;
+    }
+    
+    .span_num{
+        width: 20%;
+        padding-left: 20px !important;
+    }
+
+    .span_bday{
+        width: 20%;
+    }
+
+    #login_password{
+        width: 85%;
+    }
+    
+    #toggle_loginpass{
+        width: 15%;
+    }
+
+    .form_login header, .form_register header{
+        font-size: calc(2rem - 2px);
+    }
+
+    .col-md-6{
+        width: 100%;
+    }
+
+    .col_bday{
+        margin-top: 15px !important;
+    }
+
+    .span_right{
+        width: 20%;
+    }
+
+    #datepicker_input + span.placeholder{
+        left: 75px;
+    }
+
+    .datepicker-dropdown{
+        top: 265px !important;
+    }
+    
+}
+
+/* If [device width] is less than or equal to 768px (md), then... */
+/* sm - xs */
+@media only screen and (max-width: 768px) {
+
+    .container-start-renter{
+        height: 750px !important;
+    }
+
+    .container-renter{
+        position: absolute;
+        max-width: 420px;
+        min-height: 550px;
+        max-height: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-renter .bg{
+        top: 0;
+        height: 100%;
+    }
+
+    .form_box{
+        width: 100%;
+        height: 520px;
+        box-shadow: none;
+        border-radius:  20px 20px 0 0;
+    }
+
+    .form_box.active{
+        left: 0;
+        top: 90px;
+        height: 600px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    }
+
+    .bg .box{
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        bottom: 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .bg .box.active{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .bg .box.register{
+        border-radius: 0 0 20px 20px;
+        top: 490px !important;
+    }
+
+    .box.login{
+        top: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .box.login > p{
+        position: absolute;
+        top: 15px;
+    }
+
+    .box.register > p{
+        position: absolute;
+        top: 40px;
+    }
+
+    .form_login header, .form_register header{
+        font-size: calc(1rem + 10px);
+       
+    }
+    .form_register header{
+        /* margin-top: -50px !important; */
+    }
+
+    #span_num{
+        width: 15%;
+        padding-left: 15px !important;
+    }
+
+    .input_left{
+        width: 85%;
+    }
+    
+    .span_right{
+        width: 25%;
+    }
+
+    input#rLname + span.placeholder{
+        left: 210px;
+    }
+    
+    input#rNumber + span.placeholder{
+        left: 85px;
+    }
+
+    #datepicker_input + span.placeholder{
+        left: 85px;
+    }
+
+    .datepicker-dropdown{
+        top: 380px !important;
+    }
+
+    .span_num{
+        padding-left: 25px !important;
+    }
+
+}

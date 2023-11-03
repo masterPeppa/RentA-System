@@ -1,0 +1,233 @@
+
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-14: 14px;
+}
+
+body{
+    color: var(--text-color);
+    font-size: var(--font-14);
+}
+
+.main-section{
+    margin-top: 85px !important;
+}
+
+.renter-prof{
+    margin-top: 140px !important;
+}
+
+.prof-containers{
+    width: 650px;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.prof-email{
+    font-size: .9rem;
+}
+
+.prof-img{
+    border-radius: 50%;
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+.edit-img{
+    margin-top: -15px !important;
+    border-radius: 15px;
+    border: none;
+    background: #fff;
+    font-weight: 600; 
+    box-shadow:rgba(0, 0, 0, 0.12) 0px 6px 16px !important;
+    color: var(--main-color); 
+    font-size: .7rem !important;
+}
+
+.edit-img:hover{
+    background: #f9f9f9;
+}
+
+.verified-badge{
+    width: 30px;
+}
+
+.prof-name{
+    font-weight: 600;
+}
+
+.links{
+    cursor: pointer;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.links:hover{
+    color: var(--main-color);
+}
+
+.profile-inputs{
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #ede4ff;
+}
+
+.profile-inputs:hover{
+    border: 1px solid var(--main-color);
+}
+
+/* INPUTS ``` */
+.form_inputs {
+    position: relative;
+}
+
+.prof-inputs{
+    font-size: 1rem;
+    color: var(--text-color) !important;
+    border: 2px solid  #D9D9D9;
+    outline: none;
+    background-color: #f3f6fb;
+}
+
+.form_inputs input.prof-inputs {
+    width: 100%;
+    border-radius: 15px;
+    color: var(--text-color) !important;
+}
+
+.form_inputs input.input_left.prof-inputs {
+    border-radius: 15px 0 0 15px;
+}
+
+.form_inputs span.placeholder {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    margin: 13px 0;
+    /* padding: 0 4px; */
+    color:  var(--text-color);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+.form_inputs input:valid + span.placeholder,
+.form_inputs input:focus + span.placeholder,
+.form_inputs input:not(:placeholder-shown)~span.placeholder{
+    transform: scale(0.8) translateY(-25px);
+    background: #f3f6fb;
+    transition: all 0.2s;
+}
+
+.form_inputs input:hover,
+#rOccupation:hover{
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+/* PASSWORD ```` */
+.input_left{
+    width: 80%;
+    border-radius: 15px 0 0 15px;
+    padding-left: 15px !important;
+}
+
+.span_right{
+    width: 20%;
+    border-radius: 0 15px 15px 0;
+    border: 2px rgba(140, 82, 255, 0.25);
+    background: rgba(140, 82, 255, 0.25);
+}
+
+/* .span_left{
+    width: 50%;
+    background:rgba(140, 82, 255, 0.25);
+    border: 2px rgba(140, 82, 255, 0.25);
+    font-size: calc(1rem - 3px);
+    padding-left: 15px !important;
+    border-radius: 15px 0 0 15px;
+} */
+
+.span_right:hover{
+    background: rgba(140, 82, 255, 0.40);
+}
+
+.span_icons{
+    position: relative;
+    top: 10px;
+    left: -2px;
+}
+
+.btns-profile{
+    height: 43px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    text-decoration: none;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.1) !important;
+}
+
+.btns-profile:hover,
+.btns-profile:focus{
+    background-color: #8548ff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.3) !important;
+
+}
+
+.div-profile{
+    border-bottom: 1px solid #D9D9D9;
+}
+
+
+
+/* `````````````````` */
+/* MEDIA QUERIES ```` */
+    
+/* SM ````````` */
+@media only screen and (max-width: 768px){
+
+    .prof-containers{
+        width: 550px;
+    }
+}
+    
+    
+/* SM ````````` */
+@media only screen and (max-width: 576px){
+
+    .prof-containers{
+        width: 420px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

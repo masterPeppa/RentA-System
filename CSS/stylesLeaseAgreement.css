@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-14: 14px;
+}
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--text-color);
+}
+
+
+.container-contract{
+    margin-top: 75px !important;
+    font-size: var(--font-14);
+}
+
+.contract{
+    width: 840px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(140, 82, 255, 0.90) 0px 1px 4px;
+}
+
+.contract h3{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.subtitle{
+    background: #ede4ff;
+}
+
+.contract-inputs{
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    background: #ede4ff;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    border-top:  none;
+    border-left: none;
+}
+
+.contract-inputs:hover,
+.contract-inputs:focus{
+    outline: none;
+}
+
+.contract-input-name{
+    width: 100%;
+}
+
+.contract-inputs-day{
+    width: 80px;
+}
+
+.contract-inputs-date{
+    width: 120px;
+}
+
+.txtarea-furnishings{
+    width: 100%;
+    height: 100px;
+    border: 1px solid var(--main-color);
+    border-top: none;
+    border-left: none;
+    border-radius: 20px !important;
+    resize: none !important;
+    background-color: #ede4ff;
+}
+
+.txtarea-furnishings:hover,
+.txtarea-furnishings:focus,
+.txtarea-furnishings:active{
+    outline: none;
+}
+
+.select-days{
+    background-color: #ede4ff;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    border-style: none solid solid none;
+    outline: none;
+}
+
+.signature{
+    color: var(--main-color) !important;
+    font-weight: 600;
+}
+
+/* RENTAL AGREEMENT SIGNATURE  ```` */
+
+#landlordCanvas ,#renterCanvas{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px !important;
+    z-index: -1;
+    border: 1px solid var(--main-color);
+    border-style: none none solid none;
+
+}
+
+#matchwebcam, #matchcanvas{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.box-signature{
+    width: 260px;
+    height: 120px;
+    padding: 20px !important;
+    border: 4px dashed #EDE4FF;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.box-signature:hover{
+    cursor: pointer;
+}
+
+.img-upload-id{
+    width: 45px;
+    height: 45px;
+}
+
+p.upload{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p.upload + p{
+    font-size: calc(1rem - 2px);
+    font-weight: 400;
+}
+
+.p-filename{
+    font-weight: 400 !important;
+    font-size: calc(1rem - 4px) !important;
+}
+
+.showImgSize{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-create{
+    width: 840px;
+}
+
+.send-continue{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.1) !important;
+}
+
+.send-continue:hover{
+    background-color: #8548ff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.3) !important;
+
+}
+
+.return-btns{
+    background-color: #00000000;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+    text-decoration: none;
+}
+
+.return-btns:hover{
+    color: black;
+    transition: ease-in-out 0.3s;
+    transform: translateX(-5px);
+}
+
+.bi-send-plus{
+    color: #fff;
+}
+
+.box-s-l:hover{
+    cursor: auto;
+}

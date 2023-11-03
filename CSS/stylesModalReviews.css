@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MODAL FOR REVIEWS ``````` */
+.container_modalReviews{
+    position: fixed;
+    width: 600px;
+    height: 650px;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn-close-review{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.btn-close-review:hover,
+.btn-close-review:focus{
+    background-color: #EDE4FF;
+    box-shadow: none;
+}
+
+.modal-header-review{
+    padding: 20px 40px !important;
+    border-bottom: 1px solid rgba(140, 82, 255, 0.25);
+}
+
+.big-star-modal{
+    color: #8C52FF;
+    font-size: 30px !important;
+}
+
+.section-reviews{
+    padding: 0 50px !important;
+}
+
+
+/* SCORE BAR `````````` */
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Column layout */
+.left-side {
+    float: left;
+    width: 35%;
+    margin-top: 10px;
+  }
+  
+.middle {
+    float: left;
+    width: 55%;
+    margin-top: 10px;
+}
+
+.right-side {
+    text-align: right;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Whole bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+/* BARS */
+.overall-result-bar {
+    height: 18px; 
+    background-color: #8C52FF;
+    border-radius: 10px;
+}
+
+.overall-value-bar{
+    width: 65%;
+}
+
+/* INDIVIDUAL REVIEWS */
+
+.overall-renter-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.modal-review-date,
+.modal-review-message{
+    font-size: calc(1rem - 2px);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px){
+    
+    .container_modalReviews{
+        width: 420px;
+    }
+
+    .section-reviews{
+        padding: 0 30px !important;
+    }
+
+    .modal-header-review{
+        padding: 20px 30px !important;
+    }
+
+    .overall-label,
+    .overall-result-score{
+        font-size: calc(1rem - 2px) !important;
+    }
+
+}

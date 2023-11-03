@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.wrapper_listAProperty{
+    margin-top: 65px !important;
+}
+
+/* ```````````````````` */
+/* SIDEBAR COLUMN ````` */
+/* ```````````````````` */
+.col_sidebar{
+    border-right: 1px solid #D9D9D9 !important;
+}
+
+.sidebar-wrapper{
+    width: inherit;
+}
+
+.sidebar-item{
+    border-bottom: 1px solid #D9D9D9;
+    color: #33393b;
+}
+
+.sidebar-item:link {
+    text-decoration: none !important;
+}
+
+/* ```````````````````` */
+/* FORMS COLUMN````````*/
+/* ``````````````````` */
+
+.col_forms{
+    width: 800px;
+}
+
+.p-instruction{
+    font-size: calc(1rem - 2px) !important;
+}
+
+
+
+/* PROPERTY INFORMATION ````````` */
+/* radio button for property type */
+.label-property-type{
+    width: 145px;
+    height: 40px;
+    padding: 10px 0px !important;
+    font-size: calc(1rem - 2px);
+    font-weight: 600;
+    border-radius: 20px;
+    background: #EDE4FF;
+    border: none;
+    cursor: pointer;
+}
+
+/* radio button type hover */
+.label-property-type:hover{
+    background-color: #8C52FF;
+    color: white;
+}
+
+.row-property-type{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.input-containers{
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #EDE4FF;
+    padding: 15px !important;
+    color: #33393b !important;
+    transition: 0.2s;
+    outline: none;
+}
+
+.input-containers:hover{
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.input-containers:focus{
+    border-color: #8C52FF !important;
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.form-text{
+    font-size: calc(1rem - 3px) !important;
+}
+
+.textarea-description{
+    height: inherit;
+    resize: none;
+}
+
+.span-peso{
+    background:#EDE4FF;
+    font-size: calc(1rem - 3px);
+    width: 50px;
+    padding-left: 23px !important;
+    border-radius: 20px 0 0 20px;
+}
+
+.select-interval{
+    padding: 5px !important;
+    width: 100%;
+}
+
+/* PROPERTY DETAILS ````````` */
+.details-input-num,
+#propertyName{
+    width: 100%;
+}
+
+/* PET  ```````` */
+.btnPet{
+    width: 143px;
+    height: 40px;
+    padding-top: 12px !important;
+    text-align: center;
+    background-color: #EDE4FF;
+    cursor: pointer;
+    font-size: calc(1rem - 4px);
+    font-weight: 600;
+    border: 1px solid inherit;
+}
+
+/* radio button pet hover */
+.btnPet:hover{
+    background-color: #8C52FF;
+    color: white;
+  }
+
+  /* Custom CSS for radio button appearance when selected */
+  .btn-check:checked + .btnType {
+    background-color: #8C52FF;
+    color: white;
+  }
+  
+/* Custom CSS for radio button appearance when selected */
+.btn-check:checked + .btnPet {
+    background-color: #8C52FF;
+    color: white;
+}
+
+#yes_pet{
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#no_pet{
+    margin: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+/* FURNISHED ````````` */
+.btnfurnished{
+    width: 143px;
+    height: 40px;
+    padding-top: 12px !important;
+    text-align: center;
+    background-color: #EDE4FF;
+    cursor: pointer;
+    font-size: calc(1rem - 4px);
+    font-weight: 600;
+    border: 1px solid inherit;
+}
+
+  /* Custom CSS for radio button appearance when selected */
+.btn-check:checked + .btnfurnished {
+    background-color: #8C52FF;
+    color: white;
+}
+  /* radio button furnished hover */
+.btnfurnished:hover{
+    background-color: #8C52FF;
+    color: white;
+}
+
+#yes_furnished{
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#semi_furnished{
+    margin: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#no_furnished{
+    margin-top: 5px;
+}
+
+/* SPACES ``````` */
+.btn-spaces,
+.btnAmenities{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    color: #33393b;
+    background-color: #EDE4FF;
+    text-align: center;
+    padding-top: 12px !important;
+    font-size: calc(1rem - 4px);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Checkbox Spaces */
+.btn-spaces:hover,
+.btnAmenities:hover {
+    color: white;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+/* first 3 checkbox in indoor */
+#LivingRoom:checked ~ #btn_LivingRoom{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Diningroom:checked ~ #btn_Diningroom{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Kitchen:checked ~ #btn_Kitchen{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+/* second 3 checkbox in indoor */
+#Bedrooms:checked ~ #btn_Bedrooms{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Bathrooms:checked ~ #btn_Bathrooms{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#StudyOffice:checked ~ #btn_StudyOffice{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+/* third 3 checkbox in indoor */
+#EntertainmentRoom:checked ~ #btn_EntertainmentRoom{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#LaundryRoom:checked ~ #btn_LaundryRoom{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Hallways:checked ~ #btn_Hallways{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+/* fourt 3 checkbox in indoor */
+#Staircases:checked ~ #btn_Staircases{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#WalkInCloset:checked ~ #btn_WalkInCloset{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Other:checked ~ #btn_Other{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+/* OUTDOOR ``````` */
+/* first 3 checkbox in Outdoors */
+#FrontYard:checked ~ #btn_FrontYard{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#BackYard:checked ~ #btn_BackYard{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Terrace:checked ~ #btn_Terrace{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+/* second 3 checkbox in Outdoors */
+#Deck:checked ~ #btn_Deck{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Garden:checked ~ #btn_Garden{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#SwimmingPool:checked ~ #btn_SwimmingPool{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+/* third 3 checkbox in indoor */
+#Driveway:checked ~ #btn_Driveway{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Walkways:checked ~ #btn_Walkways{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#OutdoorKitchen:checked ~ #btn_OutdoorKitchen{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+/* fourt 3 checkbox in indoor */
+#PlayArea:checked ~ #btn_PlayArea{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#Patio:checked ~ #btn_Patio{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+#StorageShed:checked ~ #btn_StorageShed{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+/* PHOTOS `````````*/
+
+
+.uploadBox{
+    width: 97%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 4px dashed #EDE4FF;
+}
+
+.uploadBox:hover{
+    background-color: rgba(237, 228, 255, 0.5);
+}
+
+.spaces-label{
+    font-size: calc(1rem - 4px);
+    font-weight: 500;
+    transform: translateX(-2px);
+}
+
+.canvasResult{
+    width: 97%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 4px solid #EDE4FF;
+}
+
+
+/* FEATURED PHOTOS ````````*/
+#photosDiv{
+    margin-left: 330px;
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.upload-box-featured{
+    width: 245px;
+    height: 155px;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 4px dashed #EDE4FF;
+}
+
+.add-photo,
+.add-photo-result{
+    max-width: 245px;
+    min-width: 245px;
+    max-height: 155px;
+    min-height: 155px;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 4px dashed #EDE4FF;
+}
+
+.add-photo-result{
+    border: 4px solid #EDE4FF !important;
+
+}
+
+.upload-box-featured:hover,
+.add-photo:hover{
+    background-color: rgba(237, 228, 255, 0.5) !important;
+}
+
+.upload-icon{
+    font-size: 45px;
+    color: #8C52FF;
+}
+
+.landscape{
+    font-weight: 500;
+}
+
+p.featured{
+    font-weight: 600;
+}
+
+p.file-type{
+    font-size: 0.8rem;
+}
+
+.canvas-result-featured{
+    display: none;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 4px solid #EDE4FF;
+    object-fit: cover;
+}
+
+
+/* AMENITIES ``````` */
+
+#btn_washerDryerHookup{
+    font-size: calc(1rem - 5px) !important;
+}
+
+/* 1st row */
+#WiFi:checked ~ #btn_wifi,
+#AirConditioner:checked ~ #btn_airConditioner,
+#SoundproofWalls:checked ~ #btn_soundproofWalls,
+#BathTub:checked ~ #btn_bathTub{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+/* 2nd Row */
+#Sofa:checked ~ #btn_sofa,
+#Bed:checked ~ #btn_bed,
+#WorkTable:checked ~ #btn_workTable,
+#BarStool:checked ~ #btn_barStool{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+/* 3rd row */
+#DiningSet:checked ~ #btn_diningSet,
+#Fireplace:checked ~ #btn_fireplace,
+#HardwoodFloor:checked ~ #btn_hardwoodFloor,
+#Wardrobe:checked ~ #btn_wardrobe{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+/* 4th row */
+#WasherDryer:checked ~ #btn_washerDryer,
+#WasherDryerHookup:checked ~ #btn_washerDryerHookup,
+#Dishwasher:checked ~ #btn_dishwasher,
+#RangeOven:checked ~ #btn_rangeOven{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+/* 5th row */
+#CCTV:checked ~ #btn_cctv,
+#HrSecurity:checked ~ #btn_hrSecurity,
+#SmartLock:checked ~ #btn_smartLock,
+#VideoDoorbell:checked ~ #btn_videoDoorbell{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+/* 6th row */
+#PetPolicy:checked ~ #btn_petPolicy,
+#Court:checked ~ #btn_court,
+#Garage:checked ~ #btn_garage,
+#FitnessCenter:checked ~ #btn_fitnessCenter{
+    color: #fff;
+    background-color: #8C52FF;
+    outline-color: #8C52FF;
+}
+
+
+/* LOCATION ````````` */
+.locInput{
+    width: 100%;
+}
+
+.latLong{
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #D9D9D9;
+    padding: 15px !important;
+    color: #33393b !important;
+    outline: none;
+}
+
+#locationInputDiv{
+    width: 845px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #EDE4FF;
+}
+
+#homeIcon{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+#homeIconDiv{
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTACT ```````` */
+.contact-input{
+    width: 100%;
+}
+
+/* PUBLISH ````````` */
+
+.publish-note{
+    font-size: 13px;
+}
+
+.propertyListBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+}
+
+#btnPublish{
+    background-color: #8C52FF;
+    border: none;
+}
+
+#btnPublish:hover{
+    background-color: #8548ff;
+}
+
+#cancelBtn{
+    background-color: #9B89B3;
+    border: none;
+}
+
+#cancelBtn:hover{
+    background-color: #927eac;
+}
+
+.propertyListBtn:hover{
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2) !important;
+}
+
+/* CHECKBOX ````````````` */
+.checkbox-wrapper *,
+.checkbox-wrapper *::before,
+.checkbox-wrapper *::after {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input {
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox-wrapper .checkbox {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 3px solid #ccb3ff;
+    border-radius: 6px;
+    transition: all 0.375s;
+}
+
+.checkbox-wrapper input:checked ~ .checkbox {
+    transform: rotate(45deg);
+    width: 10px;
+    margin-top: -10px !important;
+    margin-left: 5px !important;
+    border-color: #8c52ff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.amenity-label{
+    font-size: 12px;
+}
+
+.container_modalAddPhoto{
+    width: 800px !important;
+    height: 310px !important;
+}
+
+
+
+
+
+/* ``````````````````````` */
+/* MEDIA QUERIES ````````` */
+/* ``````````````````````` */
+
+/* LG only `````` */
+@media screen and (max-width: 1200px) and (min-width: 992px){
+
+    .col_forms{
+        width: 700px;
+    }
+
+    .label-property-type{
+        width: 118px !important;
+        font-size: calc(1rem - 1px);
+    }
+
+    .btnPet, 
+    .btnfurnished{
+        width: 123px !important;
+    }
+
+    .upload-box-featured,
+    .canvas-result-featured{
+        width: 210px !important ;
+        height: 140px !important;
+    }
+
+}
+
+/* MD ONLY `````` */
+@media screen and (max-width: 992px) and (min-width: 768px){
+
+    .sidebar-txt{
+        font-size: calc(1rem - 2px) !important;
+    }
+
+    .col_forms{
+        width: 540px;
+    }
+
+    .label-property-type{
+        width: 150px;
+        font-size: calc(1rem - 1px);
+    }
+
+    .btnPet, 
+    .btnfurnished{
+        width: 92px !important;
+    }
+
+    #btn_washerDryerHookup{
+        font-size: calc(1rem - 6px) !important;
+    }
+
+    .container_modalAddPhoto{
+        width: 720px !important;
+        height: 550px !important;
+    }
+
+    .upload-box-featured,
+    .canvas-result-featured{
+        width: 235px !important ;
+        height: 140px !important;
+    }
+
+    
+}
+
+/* SM - XS */
+@media only screen and (max-width: 768px) {
+
+    .btnPet{
+        width: 216px;
+    }
+
+    .btnfurnished{
+        width: 142px !important;
+    }
+
+    .label-property-type{
+        width: 210px;
+    }
+
+    .row-featured,
+    .row-photos{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .col-featured{
+        width: 380px;
+    }
+   
+    .upload-box-featured,
+    .canvas-result-featured{
+        width: 100%;
+        height: 230px !important;
+    }
+
+    .col-photos{
+        width: 380px;
+    }
+
+    .uploadBox,
+    .canvasResult{
+        width: 100%;
+        height: 200px !important;
+    }
+
+    .occupant{
+        font-size: 15px;
+    }
+
+    .container_modalAddPhoto{
+        width: 420px !important;
+        height: 650px !important;
+    }
+    
+}
+
+
+
+
+/* MODAL */
+.container-logout{
+    width: 400px;
+    height: 200px !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoutmodalbody{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    font-size: 20px;
+    padding-left: 15px !important;
+}
+
+
+#notEnoughPhotoModal{
+    z-index: 9999 !important;
+}

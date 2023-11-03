@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MODAL FOR AMENITIES ``````` */
+.container_modalAmenity{
+    position: fixed;
+    width: 600px;
+    height: 550px;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn-close-amenity{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+.btn-close-amenity:hover,
+.btn-close-amenity:focus{
+    background-color: #EDE4FF;
+    box-shadow: none;
+}
+
+.modal-header-amenity{
+    padding: 20px 45px !important;
+    border-bottom: 1px solid rgba(140, 82, 255, 0.25);
+}
+
+.div-amenity{
+    padding: 0 50px !important;
+}
+
+.amenity-item{
+    border-bottom: 1px solid rgba(140, 82, 255, 0.25);
+    padding: 10px 0 !important;
+}
+
+
+@media only screen and (max-width: 576px){
+
+    .container_modalAmenity{
+        width: 420px;
+    }
+
+}

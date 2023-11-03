@@ -1,0 +1,317 @@
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-13: 13px;
+}
+
+/* radio buttons */
+.div-radio{
+    width: 420px;
+    border-radius: 15px;
+    /* border: 1px solid var(--main-color); */
+    box-shadow: rgba(140, 82, 255, 0.24) 0px 3px 8px;
+}
+
+.radio-item [type="radio"]{
+    display: none;
+}
+
+/* whole radbtn */
+.radio-item > label{
+    display: block;
+    padding: 20px 40px 20px 35px !important;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    min-width: 250px;
+    white-space: nowrap;
+    position: relative;
+    color: #33393b;
+}
+
+.radio-item label:after,
+.radio-item label:before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* radiobtn main circle */
+.radio-item label:after{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #8C52FF;
+    left: 0px;
+    top: 20px;
+    /* top: calc(50% - 12px); */
+}
+
+/* radiobtn inner circle */
+.radio-item label:before{
+    background: #8C52FF;
+    height: 10px;
+    width: 10px;
+    /* top: calc(50% - 7px); */
+    top: 25px;
+    left: 5px;
+    transform: scale(5);    
+    transition: .4s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.radio-item [type="radio"]:checked ~ label:before{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.radio-item input{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.lease-type{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer-send{
+    width: 420px;
+}
+
+.send-continue{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.1) !important;
+}
+
+.send-continue:hover{
+    background-color: #8548ff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.3) !important;
+
+}
+
+.return-btns{
+    background-color: #00000000;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+}
+
+.return-btns:hover{
+    color: black;
+    transition: ease-in-out 0.3s;
+    transform: translateX(-5px);
+}
+
+/* 2 UPLOAD LEASE ```````` */
+
+.box-contract{
+    width: 520px;
+    height: 624px;
+    padding: 20px !important;
+    border: 4px dashed #EDE4FF;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.box-contract:hover{
+    cursor: pointer;
+}
+
+#landlordCanvas ,#renterCanvas{
+    max-width: 520px;
+    min-width: 520px;
+    max-height: 624px;
+    min-height: 624px;
+    border-radius: 15px !important;
+    z-index: 999;
+    border: 1px solid var(--main-color);
+    object-fit: cover;
+}
+
+.img-upload-id{
+    width: 45px;
+    height: 45px;
+}
+
+p.upload{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p.upload + p{
+    font-size: calc(1rem - 2px);
+    font-weight: 400;
+}
+
+.showImgSize{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-upload{
+    width: 520px;
+}
+
+/* CHECKBOX ````````````` */
+.checkbox-wrapper-lease *,
+.checkbox-wrapper-lease *::before,
+.checkbox-wrapper-lease *::after {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-lease label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper-lease input {
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox-wrapper-lease .checkbox {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 3px solid #ccb3ff;
+    border-radius: 6px;
+    transition: all 0.375s;
+}
+
+.checkbox-wrapper-lease input:checked ~ .checkbox {
+    transform: rotate(45deg);
+    width: 12px;
+    margin-left: 12px;
+    border-color: #8c52ff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.input-containers{
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid #EDE4FF;
+    padding: 15px !important;
+    color: #33393b !important;
+    transition: 0.2s;
+    outline: none;
+}
+
+.input-containers:hover{
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.input-containers:focus{
+    border-color: #8C52FF !important;
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.span-peso{
+    background:#EDE4FF;
+    font-size: calc(1rem - 3px);
+    width: 50px;
+    padding-left: 23px !important;
+    border-radius: 20px 0 0 20px;
+}
+
+.span-lease-date{
+    background:#EDE4FF;
+    font-size: calc(1rem - 3px);
+    width: 30%;
+    border-radius: 20px 0 0 20px;
+}
+
+.dropdown-menu{
+    background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.rental-inputs{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px !important;
+    cursor: pointer;
+    padding: 8px 15px !important;
+    border: 2px solid #D1CBDF !important;
+    font-size: var(--font-14);
+}
+.advance-input{
+    border: 2px solid #ede4ff !important;
+}
+
+.rental-inputs:hover{
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+    color: var(--text-color)
+}
+
+.rental-inputs:focus{
+    color: #284B63;
+    border-color: #8C52FF !important;
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+#downTypeSm{
+    display: inline-block;
+}
+
+#upTypeSm{
+    display: none;
+}
+
+.dropdown-menu-nth{
+    height: 150px;
+    overflow-y: auto;
+}
+
+.penaltyInput{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES ```````` */
+
+@media only screen and (max-width: 768px){
+    .footer-upload{
+        width: 450px;
+    }
+    
+    .box-contract{
+        width: 450px;
+        height: 540px;
+    }
+
+    #landlordCanvas ,#renterCanvas{
+        max-width: 450px;
+        min-width: 450px;
+        max-height: 540px;
+        min-height: 540px;
+    }
+
+    .span-lease-date{
+        width: 35%;
+    }
+}

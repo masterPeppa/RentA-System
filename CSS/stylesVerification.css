@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#container_ver{
+    width: 710px;
+    height: 560px;
+    border-radius: 20px;
+    background: #EDE4FF; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.btn_c{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn_cancel{
+    margin-top: 10px !important;
+    margin-right: 20px !important;
+    color: #495055 !important;
+}
+
+#btn_cancel:hover,
+#btn_cancel:active
+{
+    color: #33393b;
+}
+
+#img_mail{
+    width: 150px;
+    height: 150px;
+}
+
+#txt_ver h4{
+    color: #495055;
+    font-weight: 600;
+}
+
+#txt_ver p{
+    color: #495055;
+}
+
+.resend_div, 
+.spam_notif > p {
+    color: #495055;
+    font-size: small;
+}
+
+#resendLink{
+    display: none;
+    color: #008CFF;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#errorMessage{
+    color: #EE005F;
+    font-size: small;
+    font-weight: bolder;
+    display: none;
+}
+
+.change-email{
+    color: #8c52ff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.change-email:hover{
+    color: #8c52ff;
+    cursor: pointer;
+}
+
+/* loader */
+.loader {
+    display: none;
+    border: 3px solid gray;
+    border-radius: 50%;
+    border-top: 3px solid white;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+#countdown{
+    font-weight: bolder;
+}
+
+#code_container{
+    gap: 20px;
+}
+
+.rVrificationCode{
+    width: 60px;
+    height: 60px;
+    font-size: calc(2rem);
+    border-radius: 15px;
+    color: #33393b;
+}
+
+.verify_btndiv{
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+#btn_verify{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px !important;
+    background-size: 150% 150%;
+    background-color: #8C52FF;
+}
+
+#btn_verify:hover,
+#btn_verify:focus{
+    background-color: #8548ff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2) !important;
+}
+
+
+/* If [device width] is less than or equal to 768px, then do {…} */
+@media only screen and (max-width: 768px){
+   
+    #container_ver{
+        max-width: 420px;
+        max-height: 600px;
+        width: 100%;
+        height: 100%;
+        top: 62%;
+    }
+
+    .resend_div, 
+    .spam_notif > p {
+        font-size: 1rem;
+    }
+
+    #code_container{
+        gap: 5px;
+    }
+
+    .rVrificationCode{
+        width: 60px;
+        height: 60px;
+        font-size: calc(2rem - 2px);
+        /* border-radius: 5px; */
+    }
+
+    .verify_btndiv{
+        width: 90%;
+        top: 480px;
+    }
+
+    #btn_verify{
+        height: 45px;
+    }
+
+    #errorMessage{
+        display: none;
+        font-size: 1rem;
+    }
+}
+
+

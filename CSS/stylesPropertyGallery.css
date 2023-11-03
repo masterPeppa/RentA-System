@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* NAVBAR WITH SAVE ``````````` */
+
+body{
+    background-color: #f3f6fb;
+}
+
+.nav-save{ 
+    width: 100%;
+    height: 4rem;
+    background-color: #ffffff !important;
+    padding: 20px 30px !important;
+}
+
+.btn-back-view{
+    padding-left: 3px !important;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-back-view:hover{
+    background-color: #EDE4FF;
+}
+
+.save-btn{
+    cursor: pointer;
+}
+
+.heart-icons{
+    color: #8C52FF;
+}
+
+.nav-save-btns{
+    background-color: #fff;
+    border: none;
+    color: #8C52FF;
+}
+
+#btnSave{
+    display: block;
+}
+
+#btnSaved{
+    display: none;
+}
+
+
+/* GALLERY ```````` */
+
+.gallery-container{
+    margin-top: 75px !important;
+    width: 715px;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    border-radius: 15px;
+}
+
+.gallery-img:hover{
+    /* filter: brightness(90%); */
+}
+
+
+
+/* MEDIA QUERIES `````````` */
+
+
+/* SM ````````` */
+@media screen and (max-width: 768px) and (min-width: 576px){
+
+    .gallery-container{
+        width: 570px;
+    }
+    
+}
+
+/* XS */
+@media only screen and (max-width: 576px){
+
+    .gallery-container{
+        width: 420px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+:root {
+    --duration: 1s;
+    --container-size: 250px;
+    --box-size: 33px;
+    --box-border-radius: 15%;
+    --hide-duration: 5s;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loadBackground{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: black;
+    position: absolute;
+    padding: 38%;
+    opacity: 90%;
+  }
+  .Loadcontainer {
+    width: var(--container-size);
+    display: flex;
+    justify-content:last baseline;
+    align-items: center;
+    position: relative;
+    animation: removeDiv var(--hide-duration);
+  }
+  .imgLoading {
+    left: 600px;
+    top: 300px;
+    width: var(--box-size);
+    height: var(--box-size);
+    position: relative;
+    display: flex;
+    transform-origin: -50% center;
+    border-radius: var(--box-border-radius);
+  }
+  .imgLoad:after {
+    content: "(" attr(src) ")";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .imgLoading:nth-child(1) {
+    animation: jump0 var(--duration) ease-in-out infinite alternate;
+  }
+  .imgLoading:nth-child(2) {
+    animation:  jump1 var(--duration) ease-in-out infinite alternate;
+  }
+  .imgLoading:nth-child(3) {
+    animation: jump2 var(--duration) ease-in-out infinite alternate;
+  }
+  .imgLoading:nth-child(4) {
+    animation: jump3 var(--duration) ease-in-out infinite alternate;
+  }
+  .imgLoading:nth-child(5) {
+    animation: jump4 var(--duration) ease-in-out infinite alternate;
+  }
+
+  @keyframes jump0{
+    0%   { transform: translateY(-30px); }
+    25%  { transform: translateY(0); }
+    50%  { transform: translateY(0); }
+    75% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes jump1 {
+    0%   { transform: translateY(0px); }
+    25%  { transform: translateY(-30px); }
+    50%  { transform: translateY(0); }
+    75% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes jump2 {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    75% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes jump3 {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(0); }
+    50%  { transform: translateY(0); }
+    75% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes jump4 {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(0); }
+    50%  { transform: translateY(0); }
+    75% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+  }

@@ -1,0 +1,2204 @@
+{
+    "landmarks": [
+        {
+            "name": "Barasoain Church",
+            "info": "Church",
+            "latitude": 14.8362,
+            "longitude": 120.8074
+          },
+          {
+            "name": "Malolos Cathedral",
+            "info": "Church",
+            "latitude": 14.8432,
+            "longitude": 120.8107
+          },
+          {
+            "name": "Malolos Sports and Convention Center",
+            "info": "Other",
+            "latitude": 14.8350,
+            "longitude": 120.8213
+          },
+          {
+            "name": "Museo ng Malolos",
+            "info": "Other",
+            "latitude": 14.8417,
+            "longitude": 120.8091
+          },
+        {
+          "name": "Angat Dam",
+          "info": "Other",
+          "latitude": 14.9247,
+          "longitude": 121.0483
+        },
+        {
+          "name": "Biak-na-Bato National Park",
+          "info": "Other",
+          "latitude": 14.8933,
+          "longitude": 121.0129
+        },
+        {
+          "name": "Puning Cave",
+          "info": "Other",
+          "latitude": 14.8371,
+          "longitude": 120.9835
+        },
+      {
+        "name": "Hagonoy Church",
+        "info": "Church",
+        "latitude": 14.8327,
+        "longitude": 120.7394
+      },
+      {
+        "name": "Kakarong de Sili Shrine",
+        "info": "Other",
+        "latitude": 14.8389,
+        "longitude": 120.7446
+      },
+      {
+        "name": "Paoay Church",
+        "info": "Church",
+        "latitude": 18.0614,
+        "longitude": 120.5481
+      },
+      {
+        "name": "Bangui Windmills",
+        "info": "Other",
+        "latitude": 18.5275,
+        "longitude": 120.7153
+      },
+      {
+        "name": "Vigan Heritage Village",
+        "info": "Other",
+        "latitude": 17.5747,
+        "longitude": 120.3876
+      },
+      {
+        "name": "Pug-os Beach",
+        "info": "Other",
+        "latitude": 17.3712,
+        "longitude": 120.4638
+      },
+      {
+        "name": "Sinking Bell Tower of Laoag",
+        "info": "Other",
+        "latitude": 18.1969,
+        "longitude": 120.5939
+      },
+      {
+        "name": "Callao Cave",
+        "info": "Other",
+        "latitude": 17.6331,
+        "longitude": 121.7309
+      },
+      {
+        "name": "Palaui Island",
+        "info": "Other",
+        "latitude": 18.5521,
+        "longitude": 122.0174
+      },
+      {
+        "name": "Buntun Bridge",
+        "info": "Other",
+        "latitude": 17.6144,
+        "longitude": 121.7242
+      },
+      {
+        "name": "Cagayan River",
+        "info": "Other",
+        "latitude": 17.8086,
+        "longitude": 121.6629
+      },
+      {
+        "name": "Sierra Cave",
+        "info": "Other",
+        "latitude": 17.9871,
+        "longitude": 121.7218
+      },
+      {
+        "name": "Mount Pinatubo",
+        "info": "Other",
+        "latitude": 15.1421,
+        "longitude": 120.3494
+      },
+      {
+        "name": "Nayong Pilipino Clark",
+        "info": "Other",
+        "latitude": 15.1688,
+        "longitude": 120.5598
+      },
+      {
+        "name": "Subic Bay",
+        "info": "Other",
+        "latitude": 14.7879,
+        "longitude": 120.2718
+      },
+      {
+        "name": "Puning Hot Spring",
+        "info": "Other",
+        "latitude": 15.2345,
+        "longitude": 120.2266
+      },
+      {
+        "name": "Paskuhan Village",
+        "info": "Other",
+        "latitude": 15.1503,
+        "longitude": 120.5938
+      },
+      {
+        "name": "Tagaytay Picnic Grove",
+        "info": "Other",
+        "latitude": 14.1153,
+        "longitude": 120.9491
+      },
+      {
+        "name": "Pagsanjan Falls",
+        "info": "Other",
+        "latitude": 14.2738,
+        "longitude": 121.4895
+      },
+      {
+        "name": "Taal Volcano",
+        "info": "Other",
+        "latitude": 14.0026,
+        "longitude": 120.9937
+      },
+      {
+        "name": "Nagcarlan Underground Cemetery",
+        "info": "Other",
+        "latitude": 14.1332,
+        "longitude": 121.4167
+      },
+      {
+        "name": "Liliw Church",
+        "info": "Church",
+        "latitude": 14.1542,
+        "longitude": 121.4376
+      },
+      {
+        "name": "Pahiyas Festival",
+        "info": "Other",
+        "latitude": 13.9250,
+        "longitude": 121.6179
+      },
+      {
+        "name": "Pila Heritage Site",
+        "info": "Other",
+        "latitude": 14.3424,
+        "longitude": 121.3652
+      },
+      {
+        "name": "Mayon Volcano",
+        "info": "Other",
+        "latitude": 13.2554,
+        "longitude": 123.6851
+      },
+      {
+        "name": "Cagsawa Ruins",
+        "info": "Other",
+        "latitude": 13.4393,
+        "longitude": 123.3035
+      },
+      {
+        "name": "Quitinday Green Hills",
+        "info": "Other",
+        "latitude": 13.4636,
+        "longitude": 123.6081
+      },
+      {
+        "name": "Misibis Bay",
+        "info": "Other",
+        "latitude": 13.2192,
+        "longitude": 123.7492
+      },
+      {
+        "name": "Calaguas Islands",
+        "info": "Other",
+        "latitude": 14.4981,
+        "longitude": 122.9273
+      },
+      {
+        "name": "Miag-ao Church",
+        "info": "Church",
+        "latitude": 10.6413,
+        "longitude": 122.2476
+      },
+      {
+        "name": "Boracay Island",
+        "info": "Other",
+        "latitude": 11.9674,
+        "longitude": 121.9246
+      },
+      {
+        "name": "Mambukal Mountain Resort",
+        "info": "Other",
+        "latitude": 10.4742,
+        "longitude": 122.8854
+      },
+      {
+        "name": "Garinfarm Pilgrimage Resort",
+        "info": "Other",
+        "latitude": 10.9787,
+        "longitude": 122.6142
+      },
+      {
+        "name": "Gigantes Islands",
+        "info": "Other",
+        "latitude": 11.0117,
+        "longitude": 123.0101
+      },
+      {
+        "name": "Magellan's Cross",
+        "info": "Other",
+        "latitude": 10.2949,
+        "longitude": 123.9058
+      },
+      {
+        "name": "Chocolate Hills",
+        "info": "Other",
+        "latitude": 9.8167,
+        "longitude": 124.1667
+      },
+      {
+        "name": "Dumaguete Belfry",
+        "info": "Other",
+        "latitude": 9.3097,
+        "longitude": 123.3089
+      },
+      {
+        "name": "Cambugahay Falls",
+        "info": "Other",
+        "latitude": 9.1867,
+        "longitude": 123.5609
+      },
+      {
+        "name": "Fort San Pedro",
+        "info": "Other",
+        "latitude": 10.2928,
+        "longitude": 123.9053
+      },
+      {
+        "name": "San Juanico Bridge",
+        "info": "Other",
+        "latitude": 11.2843,
+        "longitude": 125.0224
+      },
+      {
+        "name": "Leyte Landing Memorial Park",
+        "info": "Other",
+        "latitude": 11.2322,
+        "longitude": 125.0128
+      },
+      {
+        "name": "Cuatro Islas",
+        "info": "Other",
+        "latitude": 10.4253,
+        "longitude": 124.5227
+      },
+      {
+        "name": "Biri Rock Formations",
+        "info": "Other",
+        "latitude": 12.6416,
+        "longitude": 124.3961
+      },
+      {
+        "name": "Limasawa Island",
+        "info": "Other",
+        "latitude": 10.1535,
+        "longitude": 125.0253
+      },
+      {
+        "name": "Fort Pilar",
+        "info": "Other",
+        "latitude": 6.9138,
+        "longitude": 122.0697
+      },
+      {
+        "name": "Yakan Weaving Village",
+        "info": "Other",
+        "latitude": 6.9082,
+        "longitude": 122.1051
+      },
+      {
+        "name": "Zamboanga City Hall",
+        "info": "Other",
+        "latitude": 6.9197,
+        "longitude": 122.0815
+      },
+      {
+        "name": "Great Santa Cruz Island",
+        "info": "Other",
+        "latitude": 6.9180,
+        "longitude": 122.0422
+      },
+      {
+        "name": "Rio Hondo Bridge",
+        "info": "Other",
+        "latitude": 6.8971,
+        "longitude": 122.0826
+      },
+      {
+        "name": "Camiguin White Island",
+        "info": "Other",
+        "latitude": 9.1907,
+        "longitude": 124.7085
+      },
+      {
+        "name": "Dahilayan Adventure Park",
+        "info": "Other",
+        "latitude": 8.2896,
+        "longitude": 124.7662
+      },
+      {
+        "name": "Maria Cristina Falls",
+        "info": "Other",
+        "latitude": 8.2991,
+        "longitude": 124.6388
+      },
+      {
+        "name": "Mount Hibok-Hibok",
+        "info": "Other",
+        "latitude": 9.2036,
+        "longitude": 124.6737
+      },
+      {
+        "name": "Tinago Falls",
+        "info": "Other",
+        "latitude": 8.2331,
+        "longitude": 124.2548
+      },
+      {
+        "name": "People's Park",
+        "info": "Other",
+        "latitude": 7.0695,
+        "longitude": 125.6127
+      },
+      {
+        "name": "Eden Nature Park",
+        "info": "Other",
+        "latitude": 7.1386,
+        "longitude": 125.3618
+      },
+      {
+        "name": "Pearl Farm Beach Resort",
+        "info": "Other",
+        "latitude": 7.0826,
+        "longitude": 125.6362
+      },
+      {
+        "name": "Mount Apo",
+        "info": "Other",
+        "latitude": 6.9913,
+        "longitude": 125.2674
+      },
+      {
+        "name": "Lake Venado",
+        "info": "Other",
+        "latitude": 6.5075,
+        "longitude": 125.1827
+      },
+      {
+        "name": "Asik-Asik Falls",
+        "info": "Other",
+        "latitude": 7.1521,
+        "longitude": 124.6997
+      },
+      {
+        "name": "Lake Sebu",
+        "info": "Other",
+        "latitude": 6.2086,
+        "longitude": 124.6212
+      },
+      {
+        "name": "Mount Matutum",
+        "info": "Other",
+        "latitude": 6.4264,
+        "longitude": 125.0925
+      },
+      {
+        "name": "Kutawato Caves",
+        "info": "Other",
+        "latitude": 6.5259,
+        "longitude": 124.8677
+      },
+      {
+        "name": "Notre Dame of Marbel University",
+        "info": "School",
+        "latitude": 6.4972,
+        "longitude": 124.8525
+      },
+      {
+        "name": "Butuan City Hall",
+        "info": "Other",
+        "latitude": 8.9475,
+        "longitude": 125.5401
+      },
+      {
+        "name": "Surigao City Boulevard",
+        "info": "Other",
+        "latitude": 9.7865,
+        "longitude": 125.4936
+      },
+      {
+        "name": "Tandag Provincial Capitol",
+        "info": "Other",
+        "latitude": 9.0619,
+        "longitude": 126.1994
+      },
+      {
+        "name": "Hinatuan Enchanted River",
+        "info": "Other",
+        "latitude": 8.3667,
+        "longitude": 126.3333
+      },
+      {
+        "name": "Magpupungko Rock Pools",
+        "info": "Other",
+        "latitude": 9.8167,
+        "longitude": 126.1500
+      },
+      {
+        "name": "Baguio Cathedral",
+        "info": "Church",
+        "latitude": 16.4023,
+        "longitude": 120.5960
+      },
+      {
+        "name": "Burnham Park",
+        "info": "Other",
+        "latitude": 16.4027,
+        "longitude": 120.5913
+      },
+      {
+        "name": "Banaue Rice Terraces",
+        "info": "Other",
+        "latitude": 16.9298,
+        "longitude": 121.0565
+      },
+      {
+        "name": "Sagada Hanging Coffins",
+        "info": "Other",
+        "latitude": 17.0830,
+        "longitude": 120.9013
+      },
+      {
+        "name": "Mount Pulag",
+        "info": "Other",
+        "latitude": 16.5887,
+        "longitude": 120.8889
+      },
+      {
+        "name": "Hagonoy Municipal Hall",
+        "info": "Other",
+        "latitude": 14.8263,
+        "longitude": 120.7348
+      },
+      {
+        "name": "Sta. Monica Church",
+        "info": "Church",
+        "latitude": 14.8315,
+        "longitude": 120.7361
+      },
+      {
+        "name": "Balubad Elementary School",
+        "info": "School",
+        "latitude": 14.8350,
+        "longitude": 120.7396
+      },
+      {
+        "name": "Hagonoy Public Market",
+        "info": "Market",
+        "latitude": 14.8269,
+        "longitude": 120.7353
+      },
+      {
+        "name": "Plaza Burgos",
+        "info": "Other",
+        "latitude": 14.8317,
+        "longitude": 120.7357
+      },
+      {
+        "name": "Santa Maria Church",
+        "info": "Church",
+        "latitude": 14.8246,
+        "longitude": 120.9673
+      },
+      {
+        "name": "Pilak Shell Museum",
+        "info": "Other",
+        "latitude": 14.8351,
+        "longitude": 120.9619
+      },
+      {
+        "name": "Pulong Buhangin Art Gallery",
+        "info": "Other",
+        "latitude": 14.8203,
+        "longitude": 120.9812
+      },
+      {
+        "name": "Balasing River",
+        "info": "Other",
+        "latitude": 14.8299,
+        "longitude": 120.9545
+      },
+      {
+        "name": "Santa Clara River",
+        "info": "Other",
+        "latitude": 14.8237,
+        "longitude": 120.9797
+      },
+      {
+        "name": "Paombong Municipal Hall",
+        "info": "Other",
+        "latitude": 14.8318,
+        "longitude": 120.7694
+      },
+      {
+        "name": "Sta. Cruz Parish Church",
+        "info": "Church",
+        "latitude": 14.8273,
+        "longitude": 120.7651
+      },
+      {
+        "name": "San Isidro Labrador Parish Church",
+        "info": "Church",
+        "latitude": 14.8301,
+        "longitude": 120.7728
+      },
+      {
+        "name": "Don Pedro V. Panuncialman Bridge",
+        "info": "Other",
+        "latitude": 14.8329,
+        "longitude": 120.7698
+      },
+      {
+        "name": "Kambal Pandesal - Paombong Branch",
+        "info": "Other",
+        "latitude": 14.8296,
+        "longitude": 120.7697
+      },
+      {
+        "name": "Hagonoy Church",
+        "info": "Church",
+        "latitude": 14.8327,
+        "longitude": 120.7394
+      },
+      {
+        "name": "Isla Balanghai",
+        "info": "Other",
+        "latitude": 14.8296,
+        "longitude": 120.7352
+      },
+      {
+        "name": "Angat River",
+        "info": "Other",
+        "latitude": 14.8447,
+        "longitude": 120.7291
+      },
+      {
+        "name": "Guiguinto-Hagonoy Road",
+        "info": "Other",
+        "latitude": 14.8365,
+        "longitude": 120.7369
+      },
+      {
+        "name": "Grotto Vista Resort",
+        "info": "Other",
+        "latitude": 14.8031,
+        "longitude": 121.0816
+      },
+      {
+        "name": "San Jose Del Monte City Hall",
+        "info": "Other",
+        "latitude": 14.8102,
+        "longitude": 121.0508
+      },
+      {
+        "name": "Kaytitinga Falls",
+        "info": "Other",
+        "latitude": 14.8337,
+        "longitude": 121.0504
+      },
+      {
+        "name": "Tungkong Mangga Eco Park",
+        "info": "Other",
+        "latitude": 14.8063,
+        "longitude": 121.0666
+      },
+      {
+        "name": "Mount Balagbag",
+        "info": "Other",
+        "latitude": 14.8373,
+        "longitude": 121.1155
+      },
+      {
+        "name": "Biak-na-Bato National Park",
+        "info": "Other",
+        "latitude": 14.9075,
+        "longitude": 121.0452
+      },
+      {
+        "name": "San Miguel Arcangel Parish Church",
+        "info": "Church",
+        "latitude": 14.8962,
+        "longitude": 121.0567
+      },
+      {
+        "name": "Palaisdaan sa San Miguel",
+        "info": "Other",
+        "latitude": 14.9146,
+        "longitude": 121.0608
+      },
+      {
+        "name": "Mt. Manalmon",
+        "info": "Other",
+        "latitude": 14.9139,
+        "longitude": 121.0466
+      },
+      {
+        "name": "Lictin Eco Park",
+        "info": "Other",
+        "latitude": 14.9001,
+        "longitude": 121.0653
+      },
+      {
+        "name": "Angat Watershed Forest Reserve",
+        "info": "Other",
+        "latitude": 14.9195,
+        "longitude": 121.0612
+      },
+      {
+        "name": "Lambakin Falls",
+        "info": "Other",
+        "latitude": 14.9053,
+        "longitude": 121.0627
+      },
+      {
+        "name": "Biak-na-Bundok Nature Park",
+        "info": "Other",
+        "latitude": 14.9146,
+        "longitude": 121.0648
+      },
+      {
+        "name": "Paksit River",
+        "info": "Other",
+        "latitude": 14.9059,
+        "longitude": 121.0672
+      },
+      {
+        "name": "Marilao Municipal Hall",
+        "info": "Other",
+        "latitude": 14.7736,
+        "longitude": 120.9606
+      },
+      {
+        "name": "Sta. Rosa de Lima Parish Church",
+        "info": "Church",
+        "latitude": 14.7602,
+        "longitude": 120.9564
+      },
+      {
+        "name": "Marilao River Park",
+        "info": "Other",
+        "latitude": 14.7671,
+        "longitude": 120.9633
+      },
+      {
+        "name": "Tambubong Bridge",
+        "info": "Other",
+        "latitude": 14.7757,
+        "longitude": 120.9579
+      },
+      {
+        "name": "Bahayang Pag-Asa Sports Complex",
+        "info": "Other",
+        "latitude": 14.7618,
+        "longitude": 120.9671
+      },
+      {
+        "name": "San Pablo Church",
+        "info": "Church",
+        "latitude": 14.8323,
+        "longitude": 120.7398
+      },
+      {
+        "name": "San Pablo Park",
+        "info": "Other",
+        "latitude": 14.8315,
+        "longitude": 120.7392
+      },
+      {
+        "name": "San Pablo Elementary School",
+        "info": "School",
+        "latitude": 14.8331,
+        "longitude": 120.7406
+      },
+      {
+        "name": "San Pablo Basketball Court",
+        "info": "Other",
+        "latitude": 14.8318,
+        "longitude": 120.7396
+      },
+      {
+        "name": "San Pablo Health Center",
+        "info": "Other",
+        "latitude": 14.8335,
+        "longitude": 120.7412
+      },
+      {
+        "name": "Anilao Municipal Hall",
+        "info": "Other",
+        "latitude": 14.8683,
+        "longitude": 120.8257
+      },
+      {
+        "name": "Anilao Church",
+        "info": "Church",
+        "latitude": 14.8657,
+        "longitude": 120.8202
+      },
+      {
+        "name": "San Juan River",
+        "info": "Other",
+        "latitude": 14.8679,
+        "longitude": 120.8278
+      },
+      {
+        "name": "Anilao Elementary School",
+        "info": "School",
+        "latitude": 14.8706,
+        "longitude": 120.8224
+      },
+      {
+        "name": "Anilao Public Market",
+        "info": "Market",
+        "latitude": 14.8712,
+        "longitude": 120.8196
+      },
+      {
+        "name": "Atlag Church",
+        "info": "Church",
+        "latitude": 14.8662,
+        "longitude": 120.8387
+      },
+      {
+        "name": "Atlag Elementary School",
+        "info": "School",
+        "latitude": 14.8650,
+        "longitude": 120.8435
+      },
+      {
+        "name": "Atlag Basketball Court",
+        "info": "Other",
+        "latitude": 14.8668,
+        "longitude": 120.8321
+      },
+      {
+        "name": "Atlag Park",
+        "info": "Other",
+        "latitude": 14.8681,
+        "longitude": 120.8364
+      },
+      {
+        "name": "Atlag Public Market",
+        "info": "Market",
+        "latitude": 14.8655,
+        "longitude": 120.8399
+      },
+      {
+        "name": "Babatnin Park",
+        "info": "Other",
+        "latitude": 14.8532,
+        "longitude": 120.7975
+      },
+      {
+        "name": "Babatnin Elementary School",
+        "info": "School",
+        "latitude": 14.8551,
+        "longitude": 120.7956
+      },
+      {
+        "name": "San Pedro Apostol Parish Church",
+        "info": "Church",
+        "latitude": 14.8547,
+        "longitude": 120.7993
+      },
+      {
+        "name": "Babatnin Public Market",
+        "info": "Market",
+        "latitude": 14.8539,
+        "longitude": 120.7979
+      },
+      {
+        "name": "Babatnin Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8558,
+        "longitude": 120.7963
+      },
+      {
+        "name": "Bagna River",
+        "info": "Other",
+        "latitude": 14.8632,
+        "longitude": 120.8001
+      },
+      {
+        "name": "Bagna Elementary School",
+        "info": "School",
+        "latitude": 14.8605,
+        "longitude": 120.8009
+      },
+      {
+        "name": "Bagna Basketball Court",
+        "info": "Other",
+        "latitude": 14.8618,
+        "longitude": 120.7994
+      },
+      {
+        "name": "Bagna Park",
+        "info": "Other",
+        "latitude": 14.8639,
+        "longitude": 120.7983
+      },
+      {
+        "name": "Bagna Church",
+        "info": "Church",
+        "latitude": 14.8603,
+        "longitude": 120.7976
+      },
+      {
+        "name": "Bagong Bayan Church",
+        "info": "Church",
+        "latitude": 14.8503,
+        "longitude": 120.8195
+      },
+      {
+        "name": "Bagong Bayan Plaza",
+        "info": "Other",
+        "latitude": 14.8497,
+        "longitude": 120.8211
+      },
+      {
+        "name": "Bagong Bayan Elementary School",
+        "info": "School",
+        "latitude": 14.8482,
+        "longitude": 120.8169
+      },
+      {
+        "name": "Bagong Bayan Basketball Court",
+        "info": "Other",
+        "latitude": 14.8519,
+        "longitude": 120.8186
+      },
+      {
+        "name": "Bagong Bayan Park",
+        "info": "Other",
+        "latitude": 14.8535,
+        "longitude": 120.8227
+      },
+      {
+        "name": "Balayong Elementary School",
+        "info": "School",
+        "latitude": 14.8342,
+        "longitude": 120.8085
+      },
+      {
+        "name": "Balayong Public Market",
+        "info": "Market",
+        "latitude": 14.8379,
+        "longitude": 120.8112
+      },
+      {
+        "name": "Balayong Basketball Court",
+        "info": "Other",
+        "latitude": 14.8356,
+        "longitude": 120.8067
+      },
+      {
+        "name": "Balite Elementary School",
+        "info": "School",
+        "latitude": 14.8583,
+        "longitude": 120.8179
+      },
+      {
+        "name": "Balite Sports Complex",
+        "info": "Other",
+        "latitude": 14.8601,
+        "longitude": 120.8171
+      },
+      {
+        "name": "Balite Public Market",
+        "info": "Market",
+        "latitude": 14.8594,
+        "longitude": 120.8192
+      },
+      {
+        "name": "Barangay Hall of Balite",
+        "info": "Other",
+        "latitude": 14.8576,
+        "longitude": 120.8195
+      },
+      {
+        "name": "Balite Church",
+        "info": "Church",
+        "latitude": 14.8592,
+        "longitude": 120.8186
+      },
+      {
+        "name": "Bangkal Elementary School",
+        "info": "School",
+        "latitude": 14.8557,
+        "longitude": 120.8373
+      },
+      {
+        "name": "Bangkal Basketball Court",
+        "info": "Other",
+        "latitude": 14.8542,
+        "longitude": 120.8346
+      },
+      {
+        "name": "St. John the Baptist Church",
+        "info": "Church",
+        "latitude": 14.8558,
+        "longitude": 120.8400
+      },
+      {
+        "name": "Bangkal Public Market",
+        "info": "Market",
+        "latitude": 14.8571,
+        "longitude": 120.8389
+      },
+      {
+        "name": "Bangkal Plaza",
+        "info": "Other",
+        "latitude": 14.8541,
+        "longitude": 120.8364
+      },
+      {
+        "name": "Barihan Elementary School",
+        "info": "School",
+        "latitude": 14.8703,
+        "longitude": 120.8215
+      },
+      {
+        "name": "Barihan Covered Court",
+        "info": "Other",
+        "latitude": 14.8718,
+        "longitude": 120.8252
+      },
+      {
+        "name": "Barihan Church",
+        "info": "Church",
+        "latitude": 14.8679,
+        "longitude": 120.8176
+      },
+      {
+        "name": "Barihan Park",
+        "info": "Other",
+        "latitude": 14.8709,
+        "longitude": 120.8184
+      },
+      {
+        "name": "Barihan Market",
+        "info": "Market",
+        "latitude": 14.8726,
+        "longitude": 120.8172
+      },
+      {
+        "name": "Bulihan Public Market",
+        "info": "Market",
+        "latitude": 14.8623,
+        "longitude": 120.8035
+      },
+      {
+        "name": "Bulihan Elementary School",
+        "info": "School",
+        "latitude": 14.8610,
+        "longitude": 120.8051
+      },
+      {
+        "name": "Bulihan Sports Complex",
+        "info": "Other",
+        "latitude": 14.8587,
+        "longitude": 120.8022
+      },
+      {
+        "name": "Bulihan Church",
+        "info": "Church",
+        "latitude": 14.8642,
+        "longitude": 120.8010
+      },
+      {
+        "name": "Bulihan Riverside Park",
+        "info": "Other",
+        "latitude": 14.8667,
+        "longitude": 120.8043
+      },
+      {
+        "name": "Bungahan Elementary School",
+        "info": "School",
+        "latitude": 14.8612,
+        "longitude": 120.8198
+      },
+      {
+        "name": "Bungahan Basketball Court",
+        "info": "Other",
+        "latitude": 14.8605,
+        "longitude": 120.8183
+      },
+      {
+        "name": "Bungahan Park",
+        "info": "Other",
+        "latitude": 14.8597,
+        "longitude": 120.8201
+      },
+      {
+        "name": "Bungahan Chapel",
+        "info": "Church",
+        "latitude": 14.8618,
+        "longitude": 120.8190
+      },
+      {
+        "name": "Bungahan Market",
+        "info": "Market",
+        "latitude": 14.8624,
+        "longitude": 120.8175
+      },
+      {
+        "name": "Caingin Elementary School",
+        "info": "School",
+        "latitude": 14.8463,
+        "longitude": 120.8081
+      },
+      {
+        "name": "Caingin Public Market",
+        "info": "Market",
+        "latitude": 14.8451,
+        "longitude": 120.8054
+      },
+      {
+        "name": "Sto. Niño Chapel",
+        "info": "Church",
+        "latitude": 14.8489,
+        "longitude": 120.8097
+      },
+      {
+        "name": "Caingin Sports Complex",
+        "info": "Other",
+        "latitude": 14.8432,
+        "longitude": 120.8058
+      },
+      {
+        "name": "Caingin Riverside Park",
+        "info": "Other",
+        "latitude": 14.8467,
+        "longitude": 120.8069
+      },
+      {
+        "name": "Calero Park",
+        "info": "Other",
+        "latitude": 14.8543,
+        "longitude": 120.8256
+      },
+      {
+        "name": "Calero Elementary School",
+        "info": "School",
+        "latitude": 14.8569,
+        "longitude": 120.8234
+      },
+      {
+        "name": "St. Michael's Church",
+        "info": "Church",
+        "latitude": 14.8555,
+        "longitude": 120.8291
+      },
+      {
+        "name": "Calero Public Market",
+        "info": "Market",
+        "latitude": 14.8531,
+        "longitude": 120.8249
+      },
+      {
+        "name": "Calero Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8548,
+        "longitude": 120.8275
+      },
+      {
+        "name": "Canalate Elementary School",
+        "info": "School",
+        "latitude": 14.8596,
+        "longitude": 120.8143
+      },
+      {
+        "name": "Canalate Public Market",
+        "info": "Market",
+        "latitude": 14.8569,
+        "longitude": 120.8101
+      },
+      {
+        "name": "Barangay Canalate Hall",
+        "info": "Other",
+        "latitude": 14.8584,
+        "longitude": 120.8118
+      },
+      {
+        "name": "San Isidro Labrador Parish Church",
+        "info": "Market",
+        "latitude": 14.8621,
+        "longitude": 120.8154
+      },
+      {
+        "name": "Canalate Basketball Court",
+        "info": "Other",
+        "latitude": 14.8603,
+        "longitude": 120.8167
+      },
+      {
+        "name": "Caniogan Church",
+        "info": "Market",
+        "latitude": 14.8532,
+        "longitude": 120.8137
+      },
+      {
+        "name": "Caniogan Elementary School",
+        "info": "School",
+        "latitude": 14.8545,
+        "longitude": 120.8121
+      },
+      {
+        "name": "Caniogan Park",
+        "info": "Other",
+        "latitude": 14.8569,
+        "longitude": 120.8174
+      },
+      {
+        "name": "Caniogan Plaza",
+        "info": "Other",
+        "latitude": 14.8523,
+        "longitude": 120.8096
+      },
+      {
+        "name": "Caniogan Health Center",
+        "info": "Other",
+        "latitude": 14.8557,
+        "longitude": 120.8113
+      },
+      {
+        "name": "Cofradia Elementary School",
+        "info": "School",
+        "latitude": 14.8385,
+        "longitude": 120.8351
+      },
+      {
+        "name": "Cofradia Basketball Court",
+        "info": "Other",
+        "latitude": 14.8397,
+        "longitude": 120.8342
+      },
+      {
+        "name": "Cofradia Plaza",
+        "info": "Other",
+        "latitude": 14.8378,
+        "longitude": 120.8348
+      },
+      {
+        "name": "Cofradia Public Market",
+        "info": "Market",
+        "latitude": 14.8391,
+        "longitude": 120.8366
+      },
+      {
+        "name": "Cofradia Park",
+        "info": "Other",
+        "latitude": 14.8370,
+        "longitude": 120.8330
+      },
+      {
+        "name": "Catmon Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8456,
+        "longitude": 120.8312
+      },
+      {
+        "name": "Catmon Elementary School",
+        "info": "School",
+        "latitude": 14.8437,
+        "longitude": 120.8328
+      },
+      {
+        "name": "St. Joseph Chapel",
+        "info": "Church",
+        "latitude": 14.8463,
+        "longitude": 120.8316
+      },
+      {
+        "name": "Catmon Covered Court",
+        "info": "Other",
+        "latitude": 14.8442,
+        "longitude": 120.8315
+      },
+      {
+        "name": "Catmon Basketball Court",
+        "info": "Other",
+        "latitude": 14.8447,
+        "longitude": 120.8322
+      },
+      {
+        "name": "Dakila Elementary School",
+        "info": "School",
+        "latitude": 14.8596,
+        "longitude": 120.8382
+      },
+      {
+        "name": "Dakila Covered Court",
+        "info": "Other",
+        "latitude": 14.8569,
+        "longitude": 120.8394
+      },
+      {
+        "name": "Dakila Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8583,
+        "longitude": 120.8376
+      },
+      {
+        "name": "Dakila Park",
+        "info": "Other",
+        "latitude": 14.8605,
+        "longitude": 120.8357
+      },
+      {
+        "name": "Dakila Health Center",
+        "info": "Other",
+        "latitude": 14.8572,
+        "longitude": 120.8378
+      },
+      {
+        "name": "Guinhawa Park",
+        "info": "Other",
+        "latitude": 14.8623,
+        "longitude": 120.8215
+      },
+      {
+        "name": "Guinhawa Elementary School",
+        "info": "School",
+        "latitude": 14.8647,
+        "longitude": 120.8182
+      },
+      {
+        "name": "St. John the Baptist Parish",
+        "info": "Church",
+        "latitude": 14.8615,
+        "longitude": 120.8228
+      },
+      {
+        "name": "Guinhawa Plaza",
+        "info": "Other",
+        "latitude": 14.8628,
+        "longitude": 120.8199
+      },
+      {
+        "name": "Guinhawa Health Center",
+        "info": "Other",
+        "latitude": 14.8602,
+        "longitude": 120.8210
+      },
+      {
+        "name": "Liang Church",
+        "info": "Other",
+        "latitude": 14.8532,
+        "longitude": 120.8007
+      },
+      {
+        "name": "Liang Municipal Hall",
+        "info": "Other",
+        "latitude": 14.8506,
+        "longitude": 120.8019
+      },
+      {
+        "name": "Liang Public Market",
+        "info": "Market",
+        "latitude": 14.8501,
+        "longitude": 120.7994
+      },
+      {
+        "name": "Barangay Liang Plaza",
+        "info": "Other",
+        "latitude": 14.8547,
+        "longitude": 120.8025
+      },
+      {
+        "name": "Liang Elementary School",
+        "info": "School",
+        "latitude": 14.8558,
+        "longitude": 120.7983
+      },
+      {
+        "name": "Ligas Public Market",
+        "info": "Market",
+        "latitude": 14.8412,
+        "longitude": 120.8193
+      },
+      {
+        "name": "Ligas Elementary School",
+        "info": "School",
+        "latitude": 14.8405,
+        "longitude": 120.8211
+      },
+      {
+        "name": "St. Joseph the Worker Parish",
+        "info": "Church",
+        "latitude": 14.8439,
+        "longitude": 120.8186
+      },
+      {
+        "name": "Ligas Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8431,
+        "longitude": 120.8172
+      },
+      {
+        "name": "Ligas Covered Court",
+        "info": "Other",
+        "latitude": 14.8406,
+        "longitude": 120.8158
+      },
+      {
+        "name": "Longos Municipal Park",
+        "info": "Other",
+        "latitude": 14.8634,
+        "longitude": 120.8072
+      },
+      {
+        "name": "Longos Elementary School",
+        "info": "School",
+        "latitude": 14.8621,
+        "longitude": 120.8039
+      },
+      {
+        "name": "Sta. Isabel Church",
+        "latitude": 14.8649,
+        "longitude": 120.8105
+      },
+      {
+        "name": "Longos Public Market",
+        "latitude": 14.8658,
+        "longitude": 120.8033
+      },
+      {
+        "name": "Barangay Hall of Longos",
+        "latitude": 14.8627,
+        "longitude": 120.8061
+      },
+      {
+        "name": "Lugam Elementary School",
+        "info": "School",
+        "latitude": 14.8321,
+        "longitude": 120.7956
+      },
+      {
+        "name": "Lugam Church",
+        "info": "Church",
+        "latitude": 14.8337,
+        "longitude": 120.7918
+      },
+      {
+        "name": "Lugam Plaza",
+        "info": "Other",
+        "latitude": 14.8305,
+        "longitude": 120.7950
+      },
+      {
+        "name": "Lugam Park",
+        "info": "Other",
+        "latitude": 14.8330,
+        "longitude": 120.7992
+      },
+      {
+        "name": "Lugam Sports Complex",
+        "info": "Other",
+        "latitude": 14.8345,
+        "longitude": 120.7923
+      },
+      {
+        "name": "Look 1st Elementary School",
+        "info": "School",
+        "latitude": 14.8532,
+        "longitude": 120.8139
+      },
+      {
+        "name": "Our Lady of the Holy Rosary Parish Church",
+        "info": "Church",
+        "latitude": 14.8539,
+        "longitude": 120.8106
+      },
+      {
+        "name": "Casa Real Shrine",
+        "info": "Other",
+        "latitude": 14.8515,
+        "longitude": 120.8132
+      },
+      {
+        "name": "Bulacan State University",
+        "info": "School",
+        "latitude": 14.8524,
+        "longitude": 120.8085
+      },
+      {
+        "name": "Barangay Look 1st Hall",
+        "info": "Other",
+        "latitude": 14.8537,
+        "longitude": 120.8154
+      },
+      {
+        "name": "Look 2nd Park",
+        "info": "Other",
+        "latitude": 14.8443,
+        "longitude": 120.8112
+      },
+      {
+        "name": "Look 2nd Elementary School",
+        "info": "School",
+        "latitude": 14.8436,
+        "longitude": 120.8099
+      },
+      {
+        "name": "Look 2nd Basketball Court",
+        "info": "Other",
+        "latitude": 14.8428,
+        "longitude": 120.8127
+      },
+      {
+        "name": "Mabolo Elementary School",
+        "info": "School",
+        "latitude": 14.8531,
+        "longitude": 120.8059
+      },
+      {
+        "name": "Mabolo Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8537,
+        "longitude": 120.8052
+      },
+      {
+        "name": "Mabolo Public Market",
+        "info": "Market",
+        "latitude": 14.8525,
+        "longitude": 120.8046
+      },
+      {
+        "name": "Mabolo Church",
+        "info": "Church",
+        "latitude": 14.8548,
+        "longitude": 120.8044
+      },
+      {
+        "name": "Mabolo Sports Complex",
+        "info": "Other",
+        "latitude": 14.8522,
+        "longitude": 120.8068
+      },
+      {
+        "name": "Mambog Public Market",
+        "info": "Market",
+        "latitude": 14.8365,
+        "longitude": 120.8201
+      },
+      {
+        "name": "Mambog Elementary School",
+        "info": "School",
+        "latitude": 14.8342,
+        "longitude": 120.8215
+      },
+      {
+        "name": "Mambog Basketball Court",
+        "info": "Other",
+        "latitude": 14.8369,
+        "longitude": 120.8193
+      },
+      {
+        "name": "St. Michael Parish Church",
+        "info": "School",
+        "latitude": 14.8387,
+        "longitude": 120.8182
+      },
+      {
+        "name": "Mambog Park",
+        "info": "Other",
+        "latitude": 14.8348,
+        "longitude": 120.8230
+      },
+      {
+        "name": "Masile Elementary School",
+        "info": "School",
+        "latitude": 14.8505,
+        "longitude": 120.8246
+      },
+      {
+        "name": "Barangay Hall of Masile",
+        "info": "Other",
+        "latitude": 14.8487,
+        "longitude": 120.8231
+      },
+      {
+        "name": "Masile Church",
+        "info": "Church",
+        "latitude": 14.8483,
+        "longitude": 120.8279
+      },
+      {
+        "name": "Masile Park",
+        "info": "Other",
+        "latitude": 14.8496,
+        "longitude": 120.8215
+      },
+      {
+        "name": "Masile Market",
+        "info": "Market",
+        "latitude": 14.8522,
+        "longitude": 120.8257
+      },
+      {
+        "name": "Matimbo Elementary School",
+        "info": "School",
+        "latitude": 14.8563,
+        "longitude": 120.8302
+      },
+      {
+        "name": "Matimbo Public Market",
+        "info": "Market",
+        "latitude": 14.8579,
+        "longitude": 120.8321
+      },
+      {
+        "name": "San Juan Bautista Parish Church",
+        "info": "Church",
+        "latitude": 14.8554,
+        "longitude": 120.8328
+      },
+      {
+        "name": "Matimbo Sports Complex",
+        "info": "Other",
+        "latitude": 14.8586,
+        "longitude": 120.8339
+      },
+      {
+        "name": "Matimbo Health Center",
+        "info": "Other",
+        "latitude": 14.8567,
+        "longitude": 120.8287
+      },
+      {
+        "name": "Mojon Church",
+        "info": "Church",
+        "latitude": 14.8532,
+        "longitude": 120.8157
+      },
+      {
+        "name": "Mojon Bridge",
+        "info": "Other",
+        "latitude": 14.8539,
+        "longitude": 120.8184
+      },
+      {
+        "name": "Mojon Plaza",
+        "info": "Other",
+        "latitude": 14.8515,
+        "longitude": 120.8163
+      },
+      {
+        "name": "Mojon Elementary School",
+        "info": "School",
+        "latitude": 14.8547,
+        "longitude": 120.8129
+      },
+      {
+        "name": "Mojon Health Center",
+        "info": "Other",
+        "latitude": 14.8519,
+        "longitude": 120.819
+      },
+      {
+        "name": "Namayan Elementary School",
+        "info": "School",
+        "latitude": 14.8534,
+        "longitude": 120.8211
+      },
+      {
+        "name": "Namayan Sports Complex",
+        "info": "Other",
+        "latitude": 14.8519,
+        "longitude": 120.8257
+      },
+      {
+        "name": "Namayan Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8527,
+        "longitude": 120.8183
+      },
+      {
+        "name": "Namayan Health Center",
+        "info": "Other",
+        "latitude": 14.8542,
+        "longitude": 120.8176
+      },
+      {
+        "name": "Namayan Covered Court",
+        "info": "Other",
+        "latitude": 14.8538,
+        "longitude": 120.8198
+      },
+      {
+        "name": "Niugan Church",
+        "info": "Church",
+        "latitude": 14.8572,
+        "longitude": 120.8256
+      },
+      {
+        "name": "Niugan Public Market",
+        "info": "Market",
+        "latitude": 14.8553,
+        "longitude": 120.8267
+      },
+      {
+        "name": "Niugan Elementary School",
+        "info": "School",
+        "latitude": 14.8566,
+        "longitude": 120.8228
+      },
+      {
+        "name": "Niugan Plaza",
+        "info": "Other",
+        "latitude": 14.8578,
+        "longitude": 120.8244
+      },
+      {
+        "name": "Barangay Niugan Hall",
+        "info": "Other",
+        "latitude": 14.8559,
+        "longitude": 120.8259
+      },
+      {
+        "name": "Pamarawan Park",
+        "info": "Other",
+        "latitude": 14.8321,
+        "longitude": 120.7987
+      },
+      {
+        "name": "Pamarawan Heritage House",
+        "info": "Other",
+        "latitude": 14.8295,
+        "longitude": 120.7964
+      },
+      {
+        "name": "Pamarawan River Viewpoint",
+        "info": "Other",
+        "latitude": 14.8346,
+        "longitude": 120.8002
+      },
+      {
+        "name": "Pamarawan Garden Resort",
+        "info": "Other",
+        "latitude": 14.8312,
+        "longitude": 120.8039
+      },
+      {
+        "name": "Panasahan Elementary School",
+        "info": "School",
+        "latitude": 14.8425,
+        "longitude": 120.8271
+      },
+      {
+        "name": "Panasahan Basketball Court",
+        "info": "Other",
+        "latitude": 14.8442,
+        "longitude": 120.8266
+      },
+      {
+        "name": "Panasahan Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8429,
+        "longitude": 120.8283
+      },
+      {
+        "name": "Panasahan Public Market",
+        "info": "Market",
+        "latitude": 14.8421,
+        "longitude": 120.8257
+      },
+      {
+        "name": "San Isidro Labrador Parish Church",
+        "info": "Church",
+        "latitude": 14.8406,
+        "longitude": 120.8289
+      },
+      {
+        "name": "Pinagbakahan Elementary School",
+        "info": "School",
+        "latitude": 14.8463,
+        "longitude": 120.8251
+      },
+      {
+        "name": "Pinagbakahan Basketball Court",
+        "info": "Other",
+        "latitude": 14.8479,
+        "longitude": 120.8207
+      },
+      {
+        "name": "Pinagbakahan Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8476,
+        "longitude": 120.8229
+      },
+      {
+        "name": "Pinagbakahan Park",
+        "info": "Other",
+        "latitude": 14.8490,
+        "longitude": 120.8273
+      },
+      {
+        "name": "Pinagbakahan Church",
+        "info": "Church",
+        "latitude": 14.8449,
+        "longitude": 120.8253
+      },
+      {
+        "name": "San Agustin Church",
+        "info": "Church",
+        "latitude": 14.8443,
+        "longitude": 120.8067
+      },
+      {
+        "name": "San Agustin Elementary School",
+        "info": "School",
+        "latitude": 14.8472,
+        "longitude": 120.8049
+      },
+      {
+        "name": "San Agustin Plaza",
+        "info": "Other",
+        "latitude": 14.8425,
+        "longitude": 120.8031
+      },
+      {
+        "name": "San Agustin Health Center",
+        "info": "Other",
+        "latitude": 14.8466,
+        "longitude": 120.8112
+      },
+      {
+        "name": "San Agustin Basketball Court",
+        "info": "Other",
+        "latitude": 14.8451,
+        "longitude": 120.8084
+      },
+      {
+        "name": "San Gabriel Parish Church",
+        "info": "Church",
+        "latitude": 14.8537,
+        "longitude": 120.7985
+      },
+      {
+        "name": "San Gabriel Municipal Hall",
+        "info": "Other",
+        "latitude": 14.8521,
+        "longitude": 120.7983
+      },
+      {
+        "name": "San Gabriel Plaza",
+        "info": "Other",
+        "latitude": 14.8538,
+        "longitude": 120.7991
+      },
+      {
+        "name": "San Juan River",
+        "info": "Other",
+        "latitude": 14.8532,
+        "longitude": 120.7967
+      },
+      {
+        "name": "San Gabriel Elementary School",
+        "info": "School",
+        "latitude": 14.8539,
+        "longitude": 120.8004
+      },
+      {
+        "name": "San Juan Church",
+        "info": "Church",
+        "latitude": 14.8601,
+        "longitude": 120.8192
+      },
+      {
+        "name": "San Juan Plaza",
+        "info": "Other",
+        "latitude": 14.8608,
+        "longitude": 120.8187
+      },
+      {
+        "name": "San Juan Elementary School",
+        "info": "School",
+        "latitude": 14.8594,
+        "longitude": 120.8198
+      },
+      {
+        "name": "San Juan Park",
+        "info": "Other",
+        "latitude": 14.8597,
+        "longitude": 120.8196
+      },
+      {
+        "name": "San Juan Basketball Court",
+        "info": "Other",
+        "latitude": 14.8605,
+        "longitude": 120.8189
+      },
+      {
+        "name": "San Pablo Parish Church",
+        "info": "Church",
+        "latitude": 14.8623,
+        "longitude": 120.8096
+      },
+      {
+        "name": "San Pablo Elementary School",
+        "info": "School",
+        "latitude": 14.8645,
+        "longitude": 120.8078
+      },
+      {
+        "name": "San Pablo Park",
+        "info": "Other",
+        "latitude": 14.8612,
+        "longitude": 120.8110
+      },
+      {
+        "name": "San Pablo Public Market",
+        "info": "Market",
+        "latitude": 14.8649,
+        "longitude": 120.8062
+      },
+      {
+        "name": "San Pablo Sports Complex",
+        "info": "Other",
+        "latitude": 14.8601,
+        "longitude": 120.8145
+      },
+      {
+        "name": "Santiago Chapel",
+        "info": "School",
+        "latitude": 14.8452,
+        "longitude": 120.8199
+      },
+      {
+        "name": "Santiago Elementary School",
+        "info": "School",
+        "latitude": 14.8427,
+        "longitude": 120.8173
+      },
+      {
+        "name": "Santiago Plaza",
+        "info": "Other",
+        "latitude": 14.8459,
+        "longitude": 120.8216
+      },
+      {
+        "name": "Santiago Park",
+        "info": "Other",
+        "latitude": 14.8481,
+        "longitude": 120.8228
+      },
+      {
+        "name": "Santiago Sports Complex",
+        "info": "Other",
+        "latitude": 14.8470,
+        "longitude": 120.8195
+      },
+      {
+        "name": "Santor Park",
+        "info": "Other",
+        "latitude": 14.8537,
+        "longitude": 120.8015
+      },
+      {
+        "name": "Santor Public Market",
+        "info": "Market",
+        "latitude": 14.8523,
+        "longitude": 120.7987
+      },
+      {
+        "name": "Barangay Santor Hall",
+        "info": "Other",
+        "latitude": 14.8552,
+        "longitude": 120.8029
+      },
+      {
+        "name": "Santor Elementary School",
+        "info": "School",
+        "latitude": 14.8511,
+        "longitude": 120.7991
+      },
+      {
+        "name": "San Vicente Church",
+        "info": "Other",
+        "latitude": 14.8683,
+        "longitude": 120.8126
+      },
+      {
+        "name": "San Vicente Elementary School",
+        "info": "School",
+        "latitude": 14.8705,
+        "longitude": 120.8092
+      },
+      {
+        "name": "San Vicente Plaza",
+        "info": "Other",
+        "latitude": 14.8697,
+        "longitude": 120.8160
+      },
+      {
+        "name": "San Vicente Sports Complex",
+        "info": "Other",
+        "latitude": 14.8689,
+        "longitude": 120.8067
+      },
+      {
+        "name": "San Vicente Health Center",
+        "info": "Other",
+        "latitude": 14.8674,
+        "longitude": 120.8168
+      },
+      {
+        "name": "Santisima Trinidad Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8523,
+        "longitude": 120.8256
+      },
+      {
+        "name": "Santisima Trinidad Elementary School",
+        "info": "School",
+        "latitude": 14.8509,
+        "longitude": 120.8264
+      },
+      {
+        "name": "Santisima Trinidad Chapel",
+        "info": "Church",
+        "latitude": 14.8535,
+        "longitude": 120.8278
+      },
+      {
+        "name": "Santisima Trinidad Sports Complex",
+        "info": "Other",
+        "latitude": 14.8537,
+        "longitude": 120.8209
+      },
+      {
+        "name": "Santisima Trinidad Market",
+        "info": "Market",
+        "latitude": 14.8546,
+        "longitude": 120.8250
+      },
+      {
+        "name": "Santo Cristo Church",
+        "info": "Church",
+        "latitude": 14.8452,
+        "longitude": 120.8102
+      },
+      {
+        "name": "Santo Cristo Municipal Park",
+        "info": "Other",
+        "latitude": 14.8437,
+        "longitude": 120.8128
+      },
+      {
+        "name": "Santo Cristo Elementary School",
+        "info": "School",
+        "latitude": 14.8475,
+        "longitude": 120.8064
+      },
+      {
+        "name": "Santo Cristo Sports Complex",
+        "info": "Other",
+        "latitude": 14.8471,
+        "longitude": 120.8143
+      },
+      {
+        "name": "Santo Cristo Public Market",
+        "info": "Market",
+        "latitude": 14.8483,
+        "longitude": 120.8059
+      },
+      {
+        "name": "Barangay Santo Rosario Plaza",
+        "info": "Other",
+        "latitude": 14.8546,
+        "longitude": 120.8161
+      },
+      {
+        "name": "Our Lady of Inmaculada Concepcion Church",
+        "info": "Church",
+        "latitude": 14.8548,
+        "longitude": 120.8165
+      },
+      {
+        "name": "Santo Rosario Elementary School",
+        "info": "School",
+        "latitude": 14.8537,
+        "longitude": 120.8173
+      },
+      {
+        "name": "Casa Real Shrine",
+        "info": "School",
+        "latitude": 14.8530,
+        "longitude": 120.8156
+      },
+      {
+        "name": "Plaza Cristo Rey",
+        "info": "Other",
+        "latitude": 14.8541,
+        "longitude": 120.8148
+      },
+      {
+        "name": "Santo Niño Church",
+        "info": "Church",
+        "latitude": 14.8534,
+        "longitude": 120.8281
+      },
+      {
+        "name": "Barangay Santo Niño Park",
+        "info": "Other",
+        "latitude": 14.8509,
+        "longitude": 120.8227
+      },
+      {
+        "name": "Santo Niño Elementary School",
+        "info": "School",
+        "latitude": 14.8495,
+        "longitude": 120.8289
+      },
+      {
+        "name": "Santo Niño Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8516,
+        "longitude": 120.8270
+      },
+      {
+        "name": "Santo Niño Public Market",
+        "info": "Market",
+        "latitude": 14.8532,
+        "longitude": 120.8247
+      },
+      {
+        "name": "Sumapang Bata Municipal Park",
+        "info": "Other",
+        "latitude": 14.8582,
+        "longitude": 120.8324
+      },
+      {
+        "name": "Saint Joseph Chapel",
+        "info": "Church",
+        "latitude": 14.8610,
+        "longitude": 120.8289
+      },
+      {
+        "name": "Greenfields Subdivision",
+        "info": "Other",
+        "latitude": 14.8576,
+        "longitude": 120.8298
+      },
+      {
+        "name": "Sumapang Bata Elementary School",
+        "info": "School",
+        "latitude": 14.8563,
+        "longitude": 120.8352
+      },
+      {
+        "name": "Sumapang Matanda Church",
+        "info": "Church",
+        "latitude": 14.8623,
+        "longitude": 120.8205
+      },
+      {
+        "name": "Sumapang Elementary School",
+        "info": "School",
+        "latitude": 14.8612,
+        "longitude": 120.8241
+      },
+      {
+        "name": "Bulacan State University - Sumapang Matanda Campus",
+        "info": "School",
+        "latitude": 14.8657,
+        "longitude": 120.8183
+      },
+      {
+        "name": "Sumapang Matanda Public Market",
+        "info": "Market",
+        "latitude": 14.8642,
+        "longitude": 120.8218
+      },
+      {
+        "name": "Sumapang Matanda Park",
+        "info": "Other",
+        "latitude": 14.8619,
+        "longitude": 120.8237
+      },
+      {
+        "name": "Taal Elementary School",
+        "info": "School",
+        "latitude": 14.8632,
+        "longitude": 120.8115
+      },
+      {
+        "name": "Taal Covered Court",
+        "info": "Other",
+        "latitude": 14.8615,
+        "longitude": 120.8129
+      },
+      {
+        "name": "Barangay Taal Health Center",
+        "info": "Other",
+        "latitude": 14.8650,
+        "longitude": 120.8104
+      },
+      {
+        "name": "Taal Basketball Court",
+        "info": "Other",
+        "latitude": 14.8627,
+        "longitude": 120.8087
+      },
+      {
+        "name": "Taal Chapel",
+        "info": "Church",
+        "latitude": 14.8659,
+        "longitude": 120.8108
+      },
+      {
+        "name": "Tikay Church",
+        "info": "Church",
+        "latitude": 14.8567,
+        "longitude": 120.8021
+      },
+      {
+        "name": "Tikay Plaza",
+        "info": "Other",
+        "latitude": 14.8562,
+        "longitude": 120.8036
+      },
+      {
+        "name": "Tikay Elementary School",
+        "info": "School",
+        "latitude": 14.8548,
+        "longitude": 120.8029
+      },
+      {
+        "name": "Tikay Barangay Hall",
+        "info": "Other",
+        "latitude": 14.8569,
+        "longitude": 120.8032
+      },
+      {
+        "name": "Tikay Sports Complex",
+        "info": "Other",
+        "latitude": 14.8561,
+        "longitude": 120.8064
+      }
+      ]
+}
+  

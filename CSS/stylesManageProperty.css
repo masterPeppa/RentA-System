@@ -1,0 +1,271 @@
+
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-14: 14px;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+.modal-open, body{
+    overflow: inherit !important;
+}
+
+body{
+    color: var(--text-color) ;
+    font-size: var(--font-14);
+}
+
+.active {
+   color: var(--main-color) !important;
+}
+
+.container-manage,
+.container-no-listing{
+    margin-top: 100px !important; 
+}
+
+.container-manage{
+    /* display: none; */
+}
+
+
+/* NO LISTING `````` */
+.btn-add-property{
+    height: 60px;
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.btn-add-property:hover{
+    color: var(--text-color);
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.5) !important;
+}
+
+.bi-house-add-fill{
+    font-size: 25px !important;
+    color: var(--main-color);
+}
+
+.total-property{
+    font-weight: 600;
+}
+
+.row-header{
+    font-weight: 600;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.row-property{
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.row-btns{
+    vertical-align: middle !important;
+}
+
+.header-table{
+    font-size: calc(1rem + 2px);
+}
+
+.title{
+    font-weight: 700;
+}
+
+.if-rented{
+    width: 80px;
+    background-color: #dccbff;
+    border-radius: 10px;
+    font-weight: 600;
+    display: none;
+}
+
+.not-rented{
+    width: 150px;
+    background-color: #EDE4FF;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.table-property-img{
+    border-radius: 20px;
+    width: 250px;
+    height: 180px !important;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2);
+}
+
+.table-property-title{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.icon-c{
+    color: var(--main-color) !important;
+    font-size: 16px;
+}
+
+.div-location > span,
+.div-price > span{
+    font-weight: 600;
+}
+
+/* BUTTONS ``````` */
+
+.btns-manage-property{
+    width: 100%;
+    height: 40px;
+    background-color: #C0C6FF;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.actionIcon{
+    font-size: 15px !important;
+    padding-bottom: 10px !important;
+}
+
+.bi-eye-fill{
+    margin-top: 13px !important;
+}
+
+.table-action-btns{
+    vertical-align: middle !important; /* ```````````````*/
+}
+
+.btns-manage-property:hover{
+    outline: none;
+}
+
+.btns-manage-property:hover{
+    background-color: #a9b1ff;
+    box-shadow: 0px 5px 5px rgba(169, 177, 255, 0.5) !important;
+    
+}
+
+.btns-manage-property:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-mDelete{
+    background-color: #FAA0A0;
+}
+
+.btn-mDelete:hover{
+    background-color: #f88c8c;
+    box-shadow: 0px 5px 5px rgba(248, 140, 140, 0.5) !important;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+/* MODAL FOR DELETE ``````` */
+.container_modalDelete{
+    position: fixed;
+    width: 600px;
+    height: 350px;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.img-warning{
+    width: 80px;
+}
+
+.btn-close-del{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+}
+
+.btn-close-del:hover,
+.btn-close-amendelity:focus{
+    background-color: #EDE4FF;
+    box-shadow: none;
+}
+
+.div-del{
+    padding: 0 100px !important;
+}
+
+.modal-btns{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.btn-del{
+    background-color: #FAA0A0;
+}
+
+.btn-del:hover{
+    background-color: #f88c8c;
+    box-shadow: 0px 5px 5px rgba(248, 140, 140, 0.5) !important;
+}
+
+.btn-cancel{
+    background-color: #d9d9d9;
+}
+
+.btn-cancel:hover{
+    background-color: #cecece;
+    box-shadow: 0px 5px 5px rgba(206, 206, 206, 0.5) !important;
+}
+
+.reserved-label{
+    width: fit-content !important;
+    height: fit-content;
+    background-color: #eee6fe;
+    color: #8C52FF;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES ``````````` */
+/* LG `````` */
+@media screen and (max-width: 1200px){
+
+    .btns-manage-property{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+
+    .container_modalDelete{
+        width: 420px;
+    }
+
+    .div-del{
+        padding: 0 40px !important;
+    }
+
+}

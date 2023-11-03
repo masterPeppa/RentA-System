@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentA | Send Lease Agreement</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/key.ico">
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/">
+    <link rel="stylesheet" href="../CSS/stylesNav.css">
+    <link rel="stylesheet" href="../CSS/stylesLeaseAgreement.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+</head>
+<body>
+
+<!-- Navbar - Landlord -->
+    <div class="nav-container fixed-top">
+        <nav class="navbar navbar-expand-md px-3 px-md-5">
+            <div class="container-fluid">
+            <!-- for save condition -->
+                <div class="d-none">
+                    <input type="text" id="txtEmail" value="<?php echo $_SESSION['lEmail'];?>">
+                </div>
+                <!-- burger -->
+                <button class="navbar-toggler collapsed d-flex d-sm-block d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navMenuLandlord" >
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../imgs/logo.png" alt="RentA" id="imgLogo">
+                </a>
+                
+                <!-- Avatar - Landlord on small screen -->
+                <div class="dropdown ms-auto d-sm-block d-md-none">
+                    <button onclick="dropdownAvatarFunction()" onblur="blurFunction()" class="btn btn-light dropdown-toggle d-inline-block" type="button" id="dropdrownbtn-avatar" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="<?php echo $userProfile ?>" alt="" class="img-avatar me-1">
+                        <i class="bi bi-chevron-down" id="chevron-down-avatar"></i>
+                        <i class="bi bi-chevron-up" id="chevron-up-avatar"></i>
+                        <span class="position-absolute top-0 p-2 rounded-circle notif-badge">
+                            <span class="visually-hidden">Notif alerts</span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-avatar-sm " aria-labelledby="dropdrownbtn-avatar">
+                        <li><a class="dropdown-item dropdown-item-first" href="#">My profile</a></li>
+                        <li>
+                            <a class="dropdown-item d-flex justify-content-between" href="messages.php">Messages 
+                                <span class="badge message-badge text-dark d-flex align-items-center justify-content-center">99</span>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Favorites</a></li>
+                        <li><a class="dropdown-item dropdown-item-last" data-bs-toggle="modal" data-bs-target="#logoutModal">Log out</a></li>
+                    </ul>
+                </div>
+
+                <!-- links center -->
+                <div class="collapse navbar-collapse" id="navMenuLandlord">
+
+                    <ul class="navbar-nav navbar-nav-landlord d-flex align-items-center">
+                        
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="">My Properties</a>
+                        </li>
+
+                        <!-- Manage Renters -->
+                        <li class="nav-item dropdown d-none d-sm-none d-md-block">
+                            <button onclick="dropdownManageFunction()" onblur="blurFunction()" class="btn btn-light dropdown-toggle d-inline-block active" type="button" id="dropdrownbtn-manage" data-bs-toggle="dropdown" aria-expanded="false">
+                                Manage Renters
+                                <i class="bi bi-chevron-down" id="chevron-down-manage"></i>
+                                <i class="bi bi-chevron-up" id="chevron-up-manage"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-manage" aria-labelledby="dropdrownbtn-manage">
+                                <li><a class="dropdown-item dropdown-item-first" href="#">Applicants</a></li>
+                                <li><a class="dropdown-item " href="#">Approved Applicants</a></li>
+                                <li><a class="dropdown-item active-dropdown dropdown-item-last" href="#">Residents & Leases</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-block d-sm-block d-md-none">
+                            <a class="nav-link" href="">Manage Applicants</a>
+                        </li>
+
+                        <li class="nav-item d-block d-sm-block d-md-none">
+                            <a class="nav-link" href="">Approved Applicants</a>
+                        </li>
+
+                        <li class="nav-item d-block d-sm-block d-md-none">
+                            <a class="nav-link active" href="">Residents & Leases</a>
+                        </li>
+
+                        <li class="nav-item d-block d-sm-block d-md-none">
+                            <a class="nav-link listProperty" onclick="checklistProperty1()">List a Property</a>
+                        </li>
+
+                    </ul>
+                    
+                    <ul class="d-flex align-items-center ms-auto">
+                        <!-- Avatar - Landlord big-->
+                        <div class="dropdown me-2 d-none d-sm-none d-md-block ">
+                            <button onclick="dropdownAvatarFunction2()" onblur="blurFunction()" class="btn btn-light dropdown-toggle d-inline-block" type="button" id="dropdrownbtn-avatar" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="<?php echo $userProfile ?>" alt="" class="img-avatar me-1">
+                                <i class="bi bi-chevron-down" id="chevron-down-avatar2"></i>
+                                <i class="bi bi-chevron-up" id="chevron-up-avatar2"></i>
+                                <span class="position-absolute top-0 p-2 rounded-circle notif-badge">
+                                    <span class="visually-hidden">Notif alerts</span>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-avatar" aria-labelledby="dropdrownbtn-avatar">
+                                <li><a class="dropdown-item dropdown-item-first" href="#">My Profile</a></li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href="messages.php">Messages 
+                                        <span class="badge message-badge text-dark d-flex align-items-center justify-content-center">99</span>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Favorites</a></li>
+                                <li><a class="dropdown-item dropdown-item-last" data-bs-toggle="modal" data-bs-target="#logoutModal">Log out</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- List property button -->
+                        <div class=" nav-item d-none d-sm-none d-md-block">
+                            <a onclick="checklistProperty1()" class="btn btns listProperty btn_listProperty pt-2">List a Property</a>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+<!-- end nav landlord -->
+<!-- MODAL NOT VERIFIED YET -->
+<div class="modal fade" id="cantListModal" tabindex="-1" aria-labelledby="reasonModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modals modal_cantList">
+
+                <div class="modal-header modal-header-logout p-3">
+                    <button type="button" class="btn-close btn-close-logout" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center justify-content-center px-md-5 px-3">
+                        <img src="../../imgs/warning.png" alt="" class="img-logout">
+                        <h5 class="text-center mt-2 modal-txt"> Oops! You can't list a property yet since the admin is still verifying your identity. We will notify you immediately when you are already verified.</h5>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex gap-2 p-3">
+                    <button type="button" class="btn modal-logout-btns btn-cancel px-4 py-2" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- modal end - NOT VERIFIED YET --> 
+<!-- MODAL LOGOUT -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="modalDelete" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content container_modalLogout">
+
+                <div class="modal-header modal-header-logout p-3">
+                    <button type="button" class="btn-close btn-close-logout" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body modal-body-logout">
+                    <section class="section_logout">
+                        
+                        <div class="div-logout d-flex flex-column align-items-center justify-content-center mt-3">
+                            <img src="../imgs/logout.png" alt="" class="img-logout">
+                            <h5 class="text-center mt-1">Are you sure you want to log out?</h5>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="modal-footer d-flex gap-2 p-3">
+                    <button type="button" class="btn btn-cancel modal-logout-btns" data-bs-dismiss="modal">No</button>
+                    <a href="index.php?status=logout" class="btn btn-del modal-logout-btns d-flex align-items-center justify-content-center">Yes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- modal end - LOGOUT -->
+
+<!-- MAIN -->
+    <div class="container-fluid container-contract d-flex align-items-center justify-content-center overflow-x-auto">
+        <div class="contract p-3 ">
+            <h3 class="text-center mt-1 mb-5">LEASE AGREEMENT</h3>
+            
+            <!-- section 1 -->
+            <section>
+                <h5 class="mb-3 subtitle p-2">1. Parties, Leased Property, Term and Payment</h5>
+                <div>
+                    <p class="mb-3">This Agreement is made by and between: </p>
+                    <div class="d-flex justify-content-between gap-2">
+                        <div class="d-flex flex-column ">
+                            <b class="mb-1">Landlord</b>
+                            <div class="d-flex gap-2">
+                                <input type="text" name="" id="" placeholder="First Name" class="contract-inputs contract-input-name px-3 py-1">
+                                <input type="text" name="" id="" placeholder="Last Name" class="contract-inputs contract-input-name px-3 py-1">
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex flex-column ">
+                            <b class="mb-1">Renter</b>
+                            <div class="d-flex gap-2">
+                                <input type="text" name="" id="" placeholder="First Name" class="contract-inputs contract-input-name px-3 py-1">
+                                <input type="text" name="" id="" placeholder="Last Name" class="contract-inputs contract-input-name px-3 py-1">
+                            </div>
+                        </div>
+                    <div>
+                </div>
+                </div>
+                </div>
+
+                <div class="mt-3">
+                    <p class="mb-1">The landlord hereby agrees to lease the Property located in: </p>
+                        <div class="d-flex gap-2">
+                            <input type="text" name="" id="" placeholder="House Number" class="contract-inputs contract-input-name px-3 py-1">
+                            <input type="text" name="" id="" placeholder="Brgy" class="contract-inputs contract-input-name px-3 py-1">
+                            <input type="text" name="" id="" placeholder="City" class="contract-inputs contract-input-name px-3 py-1">
+                            <input type="text" name="" id="" placeholder="Province" class="contract-inputs contract-input-name px-3 py-1">
+                        <div>
+                </div>
+
+                
+                </section>
+
+                <div class="mt-3 d-flex align-items-center ">
+                    <p class="paragraph">The lease period shall be 
+                        <input type="text" name="" id="" placeholder="Lease period" class="contract-inputs  px-3 py-1 mx-1">
+                        <span> starting from </span>
+                        <input type="text" name="" id="" placeholder="mm/dd/yyyy" class="contract-inputs px-3 py-1 mx-1">
+                        <span class=""> and shall end and may be renewable on </span>
+                        <input type="text" name="" id="" placeholder="mm/dd/yyyy" class="contract-inputs  px-3 py-1 mx-1">
+                        <span>thereafter, on the agreed amount of ₱</span>
+                        <input type="text" name="" id="" placeholder="Lease Amount" class="contract-inputs  px-3 py-1 mx-1">
+                        <span>to be paid </span>
+                        <input type="text" name="" id="" placeholder="" value="every month" class="contract-inputs  px-3 py-1 mx-1">
+                        <span>, and the amount of ₱</span>
+                        <input type="text" name="" id="" placeholder="Deposit amount" class="contract-inputs  px-3 py-1 mx-1">
+                        <span>deposit to be paid upon the execution of this agreement.</span> 
+                    </p>
+                    
+                    
+                    
+                </div>
+            
+            <!-- section 2 -->
+            <section>
+                <h5 class="my-3 subtitle p-2">2. Use of Property</h5>
+                <p>The renter shall use the Property only fo residential purposes. During the term of this Agreement, the Renter shall act with care and prudence to prevent damage to the Property at all times. </p>
+            </section>
+
+            <!-- section 3 -->
+            <section>
+                <h5 class="my-3 subtitle p-2">3. Utilities</h5>
+                <p>The renter agrees to pay for the utilities and other services used in the Property during the term of this Agreement.</p>
+            </section>
+
+            <!-- section 4 -->
+            <section>
+                <h5 class="my-3 subtitle p-2">4. Amenities</h5>
+                <textarea name="" id="" cols="30" rows="10" class="txtarea-furnishings p-3"></textarea>
+            </section>
+
+            <!-- section 5 -->
+            <section>
+                <h5 class="my-3 subtitle p-2">5. Repairs and Damages</h5>
+                <p>Any losses and damages to amenities shall be defrayed by the Renter. If any reasonable repair is necessary for the amenities, the Renter shall notify it to the landlord. The Landlord shall defray reasonable repair costs to amenities.  </p>
+                <p class="mt-2">The Renter is not permitted to modify or paint or materially change any constant part of the Property.</p>
+            </section>
+
+            <!-- section 6 -->
+            <section>
+                <h5 class="my-3 subtitle p-2">6. Termination</h5>
+                <p>This Agreement automatically expired at the end of the specified period above. However, this Agreement shall be terminated with mutual written consent of the Parties at any time.</p>
+            </section>
+
+            <section class="mt-5">
+                <p>Signed on this 
+                    <span>
+                        <label for="days"></label>
+                        <select name="days" id="" class="select-days px-3 py-1">
+                            <option value="1">1st</option>
+                            <option value="2">2nd</option>
+                            <option value="3">3rd</option>
+                            <option value="4">4th</option>
+                            <option value="5">5th</option>
+                            <option value="6">6th</option>
+                            <option value="7">7th</option>
+                            <option value="8">8th</option>
+                            <option value="9">9th</option>
+                            <option value="10">10th</option>
+                            <option value="11">11th</option>
+                            <option value="12">12th</option>
+                            <option value="13">13th</option>
+                            <option value="14">14th</option>
+                            <option value="15">15th</option>
+                            <option value="16">16th</option>
+                            <option value="17">17th</option>
+                            <option value="18">18th</option>
+                            <option value="19">19th</option>
+                            <option value="20">20th</option>
+                            <option value="21">21st</option>
+                            <option value="22">22nd</option>
+                            <option value="23">23rd</option>
+                            <option value="24">24th</option>
+                            <option value="25">25th</option>
+                            <option value="26">26th</option>
+                            <option value="27">27th</option>
+                            <option value="28">28th</option>
+                            <option value="29">29th</option>
+                            <option value="30">30th</option>
+                            <option value="31">31st</option>
+                        </select>
+                    </span>
+                    
+                    <span class="ps-2"> day of </span> 
+                    <span>
+                        <label for="months"></label>
+                        <select name="months" id="" class="select-days px-3 py-1">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August8">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </span>
+                    <span class="ps-2"> , </span> 
+                    <input type="text" name="" id="" value="2023" placeholder="" class="contract-inputs  px-3 py-1 mx-1">
+                    <span class="ps-2">.</span> 
+                </p>
+            </section>
+
+            <section>
+                <div class="mt-5 row">
+                    <!-- LANDLORD SIGNATURE -->
+                    <div class="col-md-6 col-12 ">
+                        <input type="file" class="showImgSize" id="uploadLandlordSign" accept=".png, .jpg, .jpeg">
+                        <div class=" d-flex flex-column align-items-center" id="">
+                            <h5 class="signature text-center mb-2">Landlord</h5>
+                            <div class="box box-signature d-flex align-items-center justify-content-center flex-column" >
+                                <canvas id="landlordCanvas" class="showImgSize"></canvas>
+                                <img src="../imgs/sample-signature.png" alt="" id="backfile" class="back img-upload-id">
+                                <p class="upload back">Upload signature</p>
+                                <p class="file-type back">JPEG or PNG only</p>
+                            </div>
+
+                            <!-- pachange po ng landlord name hehe -->
+                            <p class="signature-name">LANDLORD NAME</p>
+                        </div>
+                    </div>
+
+                    <!-- RENTER'S SIGNATURE -->
+                    <div class="col-md-6 col-12">
+                        <input type="file" class="showImgSize" disabled  id="uploadRenterSign" accept=".png, .jpg, .jpeg">
+                        <div class="d-flex flex-column align-items-center" id="">
+                            <h5 class="signature text-center mb-2 mt-md-0 mt-4">Renter</h5>
+                            <div class="box box-signature box-s-r d-flex align-items-center justify-content-center flex-column" >
+                                <canvas id="renterCanvas" class="showImgSize"></canvas>
+                                <img src="../imgs/sample-signature.png" alt="" id="backfile" class="back img-upload-id">
+                                <p class="upload back">Upload signature</p>
+                                <p class="file-type back">JPEG or PNG only</p>
+                            </div>
+                            <!-- pachange po ng renter name hehe -->
+                            <p class="signature-name">RENTER NAME</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+
+        </div>
+
+        
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center ">
+        <div class="mt-3 footer-create d-flex justify-content-between align-items-center ">
+            <a onclick="GobackPage()" class="return-btns ms-2 d-flex" id=""> <span><i class="bi bi-arrow-left"></i></span>&nbsp;Back</a>
+            <a role="button" class="btn send-continue px-4 py-2 text-light">
+                <span><i class="bi bi-send-plus pe-2"></i></span>
+                Send Lease
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+
+    <!-- JS -->
+    <script src="../JavaScripts/functionNav.js"></script>
+    <script defer src="../JavaScripts/functionManageProperty.js"></script>
+
+    <script>
+            function blurFunction(){
+                var upManage = document.getElementById("chevron-up-manage");
+                var downManage = document.getElementById("chevron-down-manage");
+                var upAvatar = document.getElementById("chevron-up-avatar");
+                var downAvatar = document.getElementById("chevron-down-avatar");
+                var upAvatar2 = document.getElementById("chevron-up-avatar2");
+                var downAvatar2 = document.getElementById("chevron-down-avatar2");
+
+                upAvatar.style.display = "none";
+                downAvatar.style.display = "inline-block";
+
+                upAvatar2.style.display = "none";
+                downAvatar2.style.display = "inline-block";
+
+                upManage.style.display = "none";
+                downManage.style.display = "inline-block";
+            }
+            setInterval(function(){
+                $.ajax({
+                    url:"../Functions/Landlord/realtimeNotifCount.php",
+                    method:"POST",
+                    data:{
+                        userid:$("#txtUserId").val()
+                    },
+                    dataType:"text",
+                    success:function(data)
+                    {
+                        $("#notifCount").html(data);
+                    }
+                });
+            }, 700);
+            setInterval(function(){
+                $.ajax({
+                    url:"../Functions/Landlord/realtimeNotifCount.php",
+                    method:"POST",
+                    data:{
+                        userid:$("#txtUserId").val()
+                    },
+                    dataType:"text",
+                    success:function(data)
+                    {
+                        $("#smNotifCount").html(data);
+                    }
+                });
+            }, 700);
+    </script>
+
+</body>
+</html>

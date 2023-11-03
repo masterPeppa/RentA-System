@@ -1,0 +1,416 @@
+
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-13: 13px;
+}
+
+.container-submit{
+    margin-top: 65px !important;
+}
+
+.submit-header{
+    background-color: #EDE4FF;
+    height: 65px;
+}
+
+.submit-header-txt{
+    font-weight: 600;
+}
+
+.section-progress{
+    height: 100px;
+}
+
+.section-property-info,
+.section-note,
+.section-submit-form,
+.footer-submit{
+    padding: 50px 240px !important;
+}
+
+.section-note{
+    padding: 0px 240px !important;
+}
+
+
+.info-txt{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.img-submit-page{
+    width: 320px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+.property-name{
+    font-weight: 600 !important;
+}
+
+.property-price{
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.property-location{
+    font-size: 26px;
+    font-weight: 500 !important;
+}
+
+.view-more{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.view-more:link{
+    text-decoration: none;
+}
+
+.view-more:hover{
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+
+/* SUBMIT FORM ``````` */
+.submit-form{
+    background-color: #D1CBDF;
+    border-radius: 15px;
+}
+
+.form-renter-info{
+    border-right: 1px solid #33393b !important;
+}
+
+.form-label-submit{
+    font-weight: 600;
+}
+
+.form-control-submit{
+    border-radius: 15px;
+    border: 2px solid #D9D9D9;
+}
+
+.form-control-submit:hover{
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.form-control-submit:focus{
+    color: #284B63;
+    border-color: #8C52FF !important;
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.form-control-submit-l{
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+}
+
+.spans{
+    border-radius: 15px;
+}
+
+
+
+.verified-stat{
+    font-weight: 600;
+}
+
+/* RESIDENCY  ```````` */
+.btnResidency,
+.btnResidency2,
+.btnEvicted,
+.btnBroken{
+    width: 100%;
+    height: 40px;
+    padding-top: 12px !important;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: calc(1rem - 4px);
+    font-weight: 600;
+    border: 1px solid inherit;
+}
+
+.btn-group{
+    width: 100%;
+}
+
+
+/* radio button pet hover */
+.btnResidency:hover,
+.btnResidency2:hover,
+.btnEvicted:hover,
+.btnBroken:hover{
+    background-color: #EDE4FF;
+}
+  
+/* Custom CSS for radio button appearance when selected */
+.btn-check:checked + .btnResidency,
+.btn-check:checked + .btnResidency2,
+.btn-check:checked + .btnEvicted,
+.btn-check:checked + .btnBroken  {
+    background-color: #EDE4FF;
+}
+
+#rad-rent,
+#rad-rent2,
+#rad-yes,
+#rad-bYes{
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#rad-own,
+#rad-own2,
+#rad-no,
+#rad-bNo{
+    margin: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.if-renting{
+    font-size: 12px;
+}
+
+/* UPLOAD ID ````````` */
+.upload-id-container{
+    width: 550px;
+}
+
+.box{
+    width: 265px;
+    height: 170px;
+    padding: 10px !important;
+    border: 4px dashed #EDE4FF;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.box:hover{
+    background-color: rgba(237, 228, 255, 0.5);
+    cursor: pointer;
+}
+
+.img-upload-id{
+    width: 45px;
+    height: 45px;
+}
+
+p.upload{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p.upload + p{
+    font-size: calc(1rem - 2px);
+    font-weight: 400;
+}
+
+.p-filename{
+    font-weight: 400 !important;
+    font-size: calc(1rem - 4px) !important;
+}
+
+.showImgSize{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.p-filename{
+    display: none;
+}
+
+/* MATCHING ID ``````` */
+/* .container{
+    width: 550px;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.outer-container{
+    width: 550px;
+    height: 330px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    border: 5px solid #EDE4FF;
+    box-shadow: rgba(140, 82, 255, 0.3) 0px 1px 2px 0px, rgba(140, 82, 255, 0.15) 0px 2px 6px 2px;
+    background-color: #EDE4FF;
+}
+
+.container-match-vid,
+.container-match-pic{
+    width: 440px;
+    height: 250px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    border: 5px solid #EDE4FF;
+    box-shadow: 0 0 0 0.2rem rgba(140, 82, 255, 0.25) !important;
+}
+
+#backCanvas ,#frontcanvas{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px !important;
+    z-index: -1;
+}
+
+.btns{
+    height: 40px;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    background-color: #EDE4FF;
+    font-weight: 600;
+}
+
+.btns:hover{
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2) !important;
+    background-color: #dccbff;
+}
+
+.btn-capture{
+    width: 100%;
+}
+
+.return-btns{
+    width: 12%;
+    height: 40px;
+    background-color: #00000000;
+    color: #33393b;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+}
+
+.return-btns:hover{
+    color: black;
+    transition: ease-in-out 0.3s;
+    transform: translateX(-5px);
+}
+
+.proceed-btns{
+    width: 45%;
+}
+
+.footer-btns{
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+#btnSubmitApplication{
+    background: var(--main-color);
+    color: #fff;
+}
+
+#btnSubmitApplication:hover{
+    background: #8548ff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.5) !important;
+}
+
+#btnCancelApplication{
+    background: #9B89B3;
+    color: #fff;
+}
+
+#btnCancelApplication:hover{
+    background: #927eac;
+    box-shadow: 0px 5px 5px rgba(155, 137, 179, 0.5) !important;
+}
+
+
+
+
+/* `````````````````` */
+/* MEDIA QUERIES ```` */
+/* `````````````````` */
+
+/* XL `````` */
+@media screen and (max-width: 1400px){
+
+    .section-property-info,
+    .section-note,
+    .section-submit-form,
+    .footer-submit{
+        padding: 50px 48px !important;
+    }
+
+    .section-note{
+        padding: 0px 48px !important;
+    }
+
+}
+
+/* LG `````` */
+@media screen and (max-width: 1200px){
+   
+}
+
+
+/* MD `````` */
+@media screen and (max-width: 992px){
+
+    .property-title,
+    .property-location{
+        font-size: 1.7rem;
+    }
+}
+
+/* SM `````` */
+@media screen and (max-width: 768px){
+
+    .section-property-info,
+    .section-note,
+    .section-submit-form,
+    .footer-submit{
+        padding: 58px 16px !important;
+    }
+
+    .section-note{
+        padding: 0 16px !important;
+    }
+
+    .img-submit-page{
+        width: 420px;
+    }
+
+    .form-renter-info{
+        border-right: none !important;
+    }
+
+    .btnResidency,
+    .btnResidency2,
+    .btnEvicted,
+    .btnBroken{
+        width: 175px !important;
+    }
+
+    .outer-container{
+        width: 360px;
+        height: 260px;
+    }
+
+    .container-match-vid,
+    .container-match-pic{
+        width: 340px;
+        height: 230px;
+    }
+
+    .columns{
+        justify-content: center !important;
+        padding-top: 20px !important;
+    }
+   
+
+   
+}

@@ -1,0 +1,254 @@
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-13: 13px;
+}
+
+body{
+    color: var(--text-color) ;
+    font-size: var(--font-13);
+}
+
+.active-link{
+    color: var(--main-color);
+}
+
+#dropdrownbtn-manage{
+    margin-top: -1px !important;
+}
+
+/* MAIN ``````````` */
+.container-favorites{
+    margin-top: 120px !important;
+    padding: 0 48px !important;
+}
+
+.container-favorites h3{
+    font-weight: 700;
+}
+
+/* CARDS ``````` */
+.wrapper-cards-favorites{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 25px !important;
+    margin-top: 100px;
+}
+
+.card-favorites{
+    width: 100%;
+    max-height: 460px;
+    min-height: 450px;
+    border-radius: 25px !important;
+    box-shadow: 0px 10px 40px 2px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 25px 25px 0 0 !important;
+    height: 220px;
+    object-fit: cover;
+}
+
+.carousel-indicators button{
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50%;
+    margin-left: 5px !important;
+}
+
+.card-body{
+    padding: 0 5px;
+}
+
+.card-title{
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+
+.card-icon{
+    width: 25px;
+    color: var(--main-color);
+    font-size: calc(1rem + 2px);
+}
+
+.card-icons{
+    width: 25px;
+}
+
+.bed-icon{
+    height: 27px;
+}
+
+.div-location p{
+    font-weight: 500;
+}
+
+.card-price{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: calc(1rem + 3px);
+}
+
+.card-per{
+    font-weight: 500;
+    font-size: calc(1rem -2px);
+}
+
+.quantity{
+    font-size: calc(1rem - 2px) !important;
+    font-weight: 500;
+}
+
+.txts-bld{
+    font-size: calc(1rem - 2px);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.div-btns{
+    height: 40px;
+}
+
+.btn-view-property{
+    vertical-align: middle;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-view-property:hover{
+    background-color: #8548ff;
+    color: #fff;
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2) !important;;
+}
+
+.heart-btns{
+    height: 40px;
+    background-color: #00000000;
+    border: none;
+    position: absolute;
+    top: 15px;
+    left: 88% !important;
+    z-index: 5;
+}
+
+.heart-icons{
+    font-size: 25px;
+    color: #fff;
+}
+
+.a-view{
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+.a-view:hover{
+    transform: translateX(10px);
+    color: var(--main-color);
+}
+
+
+.btn-explore{
+    height: 60px;
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.btn-explore:hover{
+    color: var(--text-color);
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2) !important;
+}
+
+.bi-search-heart-fill{
+    font-size: 25px !important;
+    color: var(--main-color);
+}
+
+
+/* ````````````````` */
+/* MEDIA QUERIES ``` */
+/* ````````````````` */
+
+@media screen and (max-width: 1400px){
+
+    .container-favorites{
+      padding: 0 40px !important;
+    }
+}
+
+/* LG `````` */
+@media only screen and (max-width: 1200px){
+
+    .wrapper-cards-favorites{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
+        row-gap: 50px;
+    }
+
+    .container-favorites{
+        padding: 0 150px !important; 
+  }
+
+}
+
+@media only screen and (max-width: 1130px){
+
+    .container-favorites{
+        padding: 0 100px !important; 
+  }
+}
+
+/* MD `````` */
+@media screen and (max-width: 992px) {
+
+      .labels-filter{
+          font-size: var(--font-13);
+      }
+
+      .container-favorites{
+          padding: 0 48px !important;
+      }
+
+      .wrapper-cards-favorites{
+          column-gap: 25px;
+      }
+}
+
+/* SM ````````` */
+@media only screen and (max-width: 768px){
+   
+    .container-favorites{
+        margin-top: 100px !important;
+        padding: 0 24px !important;
+    }
+
+
+}
+
+/* SM ````````` */
+@media only screen and (max-width: 700px){
+
+    .wrapper-cards-favorites{
+        grid-template-columns: 1fr;
+    }
+
+    .container-favorites{
+        padding: 0 120px !important;
+    }
+}
+
+/* XS ```````` */
+@media only screen and (max-width: 576px){
+    
+    .container-favorites{
+        padding: 0 65px !important;
+    }
+
+}

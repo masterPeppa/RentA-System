@@ -1,0 +1,500 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif !important; */
+    transition: all 0.2s;
+}
+
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-14: 14px;
+}
+
+body{
+    color: var(--text-color) ;
+    font-size: var(--font-14);
+}
+
+.sections{
+    margin-top: 150px !important;
+    padding: 0 80px !important;
+}
+
+.section-titles{
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+
+/* ``````````````````` */
+/*  HEADER SECTION  ` */
+/* `````````````````` */
+
+.section-header{
+    width: 100%;
+    height: 350px;
+    background-image: url('../imgs/landingImage/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 65px !important;
+}
+
+.container-header{
+    width: 80%;
+}
+
+.txts-header h1, 
+.txts-header h4{
+    color: #fff;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.17);
+} 
+
+.txts-header h1{
+    font-weight: 700;
+    font-size: 3rem !important;
+}
+
+.search-div{
+    width: 100%;
+    height: 46px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 30px !important;
+}
+
+.search-div:hover{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+#searchbar{
+    width: 92%;
+    height: 46px;
+    background-color: #fff;
+    color: #33393b;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 50px;
+    outline: none;
+}
+
+.btn-search{
+    width: 40px;
+    height: 40px;
+    background: none;
+    margin-top: 3px !important;
+    border: none;
+}
+
+.search-icon{
+    width: 40px;
+}
+
+.suggestion-list-index{
+    margin-top: 5px !important;
+    font-size: .9rem; 
+    color: var(--text-color); 
+    border-radius: 20px; 
+    padding-left: 10px; 
+    visibility: hidden;
+    background-color: #fff;
+    z-index: 999 !important;
+}
+
+.btnSuggestion{
+    width: 100%; 
+    text-decoration: none; 
+    border: none; 
+    background: none; 
+    font-size: .9rem; 
+    text-align: left; 
+    color: #4A4A4A; 
+    padding: 10px !important; 
+    font-family: 'Be Vietnam Pro';
+}
+
+.btnSuggestion:first-child{
+    border-radius: 20px 20px 0 0 ;
+}
+
+
+.btnSuggestion:last-child{
+    border-radius: 0 0 20px 20px ;
+}
+
+.no-suggestion{
+    text-decoration: none;
+    margin-top: 5px !important;
+    font-size: .9rem; 
+    color: var(--text-color); 
+    border-radius: 20px; 
+    /* padding-left: 10px !important;  */
+    background-color: #fff;
+    padding: 10px !important;
+}
+
+.no-suggestion a:hover{
+    cursor: context-menu;
+}
+
+.suggestion-list-rentals{
+    position: absolute;
+    top: 90px;
+    font-size: .9rem; 
+    color: var(--text-color); 
+    border-radius: 20px; 
+    padding-left: 10px; 
+    visibility: hidden;
+    background-color: #fff;
+    z-index: 999 !important;
+    width: 203px;
+    margin-top: 5px !important;
+}
+
+.btnSuggestionRental{
+    width: 100%;
+    text-decoration: none; 
+    border: none; 
+    background: none; 
+    font-size: .9rem; 
+    text-align: left; 
+    color: #4A4A4A; 
+    padding: 10px !important; 
+    font-family: 'Be Vietnam Pro';
+}
+
+.btnSuggestionRental:hover{
+    background-color: #ede4ff;
+}
+
+.btnSuggestionRental:first-child:hover{
+    border-radius: 20px 20px 0 0;
+}
+
+.btnSuggestionRental:last-child:hover{
+    border-radius: 0 0 20px 20px;
+}
+
+
+
+
+
+/* ``````````````````` */
+/* PROPERTIES CARDS `` */
+/* ``````````````````` */
+
+.wrapper-cards{
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 80px !important;
+    column-gap: 25px;
+    margin-top: 100px;
+}
+
+.card{
+    width: 100%;
+    height: 460px !important;
+    border-radius: 25px !important;
+    box-shadow: 0px 10px 40px 2px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 25px 25px 0 0 !important;
+    height: 220px;
+    object-fit: cover;
+}
+
+.carousel-indicators button{
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50%;
+    margin-left: 5px !important;
+}
+
+.card-body{
+    padding: 0 5px;
+}
+
+.card-title{
+    font-weight: 700 !important;
+}
+
+.div-location p{
+    font-weight: 500;
+}
+
+.bi{
+    color: var(--main-color);
+    font-size: calc(1rem + 2px)
+}
+
+.icon-bed{
+    height: 30px !important;
+}
+
+.card-price{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: calc(1rem + 3px);
+}
+
+.card-per{
+    font-weight: 500;
+    font-size: calc(1rem -2px);
+}
+
+.quantity{
+    font-size: calc(1rem - 2px) !important;
+    font-weight: 500;
+}
+
+.txts-bld{
+    font-size: calc(1rem - 2px);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.div-btns{
+    height: 40px;
+}
+
+.card-icon{
+    width: 25px;
+    color:  var(--main-color);
+    font-size: calc(1rem + 2px);
+}
+
+.bed-icon{
+    height: 27px;
+}
+
+.card-icons{
+    width: 25px;
+}
+
+.btn-view-property{
+    vertical-align: middle;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-view-property:hover{
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.2) !important;
+    background-color: #8548ff;
+    color: #fff;
+}
+
+.btn-view-property:active,
+.btn-view-property:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.heart-btns{
+    height: 40px;
+    background-color: #00000000;
+    border: none;
+    position: absolute;
+    top: 15px;
+    left: 88% !important;
+    z-index: 5;
+}
+
+.heart-icons{
+    font-size: 25px;
+    color: #fff;
+}
+
+.a-view{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.a-view:hover{
+    transform: translateX(10px);
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card-address{
+    font-size: 13px !important;
+}
+
+
+/* ``````````````````` */
+/* STEPS SECTION ````` */
+/* ``````````````````` */
+
+.txt-steps h3 {
+    font-weight: 700;
+}
+
+.txt-steps h5 {
+    letter-spacing: -1px;
+    font-weight:500;
+}
+
+.div-step img{
+    width: 230px;
+}
+
+
+/* MODAL */
+.container-logout{
+    width: 400px;
+    height: 200px !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoutmodalbody{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    font-size: 20px;
+    padding-left: 15px !important;
+}
+
+
+
+
+/* ````````````````````` */
+/* MEDIA QUERIES `````` */
+/* ```````````````````` */
+
+
+/* XL `````` */
+@media screen and (max-width: 1400px){
+    
+    .sections,
+    .wrapper-cards{
+        padding: 0 40px !important;
+    }
+   
+}
+
+@media only screen and (max-width: 1180px){
+
+    .wrapper-cards{
+        grid-template-columns: repeat(2, 1fr) !important;
+        column-gap: 80px;
+        row-gap: 50px;
+        padding: 0 80px;
+    }
+}
+
+/* MD `````` */
+@media only screen and (max-width: 992px) {
+    .wrapper-cards{
+        column-gap: 25px;
+    }
+
+    .div-step img{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .txts-header h1{
+        font-size: 2.5rem !important;
+    }
+
+    .txts-header h4{
+        font-size: 1rem !important;
+    }
+}
+
+/* SM - XS  ```````*/
+@media only screen and (max-width: 768px) {
+
+    .sections,
+    .wrapper-cards{
+        padding: 0 24px;
+    }
+
+    .container-header{
+        width: 90% !important;
+    }
+
+    
+    .txts-header h1{
+        font-size: 1.5rem !important;
+    } 
+
+    #searchbar{
+        width: 87%;
+    }
+
+    .section-header{
+        height: 250px;
+    }
+
+    .section-titles{
+        font-size: 2rem;
+    }
+
+    .txts-header{
+        width: 80%;
+    }
+
+    #searchbar{
+        width: 90%;
+    }
+
+    .txt-steps h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-view-property{
+        width: 100% !important;
+    }
+
+    .container_modalLogout{
+        width: 420px;
+    }
+
+    .div-logout{
+        padding: 0 40px !important;
+    }
+    
+}
+
+/* XS `````` */
+@media only screen and (max-width: 576px){
+    
+    .wrapper-cards{
+        grid-template-columns: 1fr !important;
+        padding: 0 60px !important;
+    }
+
+    .sections{
+        padding: 0 60px !important;
+    }
+
+    .txts-header{
+        width: 100%;
+    }
+
+    .txt-steps h3 {
+        font-size: 1.2rem;
+    }
+    
+    .div-step img{
+        width: 100px;
+    }
+
+    
+    
+
+}

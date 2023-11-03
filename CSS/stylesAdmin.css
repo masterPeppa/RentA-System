@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+:root{
+    --sidebar-color: #2F234F;
+    --font-size: 14px;
+}
+
+.modal-open, body{
+    overflow: inherit !important;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+.modal-footer{
+    border-top: none !important;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-size: var(--font-size);
+    color: var(--sidebar-color);
+}
+
+/* SIDEBAR ```````````` */
+.admin-sidebar{
+    position: fixed;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background: var(--sidebar-color);
+    transition: all 0.5s ease;
+}
+
+.admin-logo-div{
+    height: 70px !important;
+}
+
+.admin-sidebar.active{
+    width: 60px;
+}
+
+.admin-sidebar.active .admin-logo-div .admin-logo{
+    display: none;
+}
+
+.admin-sidebar .admin-logo-div .key-logo{
+    visibility: hidden;
+}
+
+.admin-sidebar.active .admin-logo-div .key-logo{
+    visibility: visible;
+}
+
+.admin-logo-div{
+    padding-left: 15px !important;
+    height: 80px;
+}
+
+.log{
+    cursor: auto;
+}
+
+.items-container{
+    margin-top: 20px !important;
+}
+
+.item{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.item-box{
+    width: 240px;
+    height: 65px;
+    padding-left: 15px !important;
+}
+
+.item-box:hover{
+    background-color: #45366C;
+}
+
+.active-item-box{
+    background-color: #45366C;
+}
+
+.item-box span{
+    white-space: nowrap;
+}
+
+.item-img{
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.bx{
+    font-size: 25px;
+}
+
+.sidebar-btn{
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+.item-box{
+    cursor: pointer;
+}
+
+/* RIGHT SIDE ``````` */
+/* NAVBAR ``````````` */
+.home-section{
+    width: calc(100% - 240px);
+    min-height: 100vh;
+    position: relative;
+    background: #f3f6fb;
+    left: 240px;
+    transition: all 0.5s ease;
+}
+
+.admin-sidebar.active ~ .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.home-section nav{
+    height: 70px;
+    background: #FFF;
+}
+
+.admin-badge{
+    width: 40px;
+    height: 20px;
+    background-color: #8c52ff !important;
+    border: 2px solid #fff !important;
+    top: 8px;
+    left: 115% !important;
+    font-size: 12px;
+    border-radius: 15px;
+
+    /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    padding-top: 6px !important;
+    left: 110% !important;
+    color: var(--main-color) !important;
+    z-index: 999; */
+}
+
+.bx-bell{
+    font-size: 35px;
+}
+
+.admin-name{
+    font-weight: 600;
+}
+
+/* BOXES `````````` */
+a{
+    text-decoration: none;
+}
+
+.grid-2-cols{
+    display: grid;
+    /* grid-template-columns: 1fr 5fr; */
+    grid-template-columns: 1fr;
+}
+
+.admin-page-h1{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+}
+
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.admin-container{
+    margin-top: 65px;
+}
+
+.admin-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 20px;
+    margin-top: 100px;
+}
+
+.admin-card{
+    position: relative;
+    width: 350px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #8C52FF;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24);
+}
+
+.admin-card:hover{
+    /* scale up the size of the card when hovered */
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+
+    .card-title{
+        color: #FFF;
+        font-size: 24px;
+        transition: 0.4s;
+    }
+
+    .card-number{
+        font-size: 100px;
+        transition: 0.4s;
+    }
+
+    .card-img{
+        transition: 0.4s;
+    }
+
+    #vector1{
+        top: -50px;
+        right: -100px;
+    }
+    #vector2{
+        top: -50px;
+        right: -50px;
+        rotate: 18deg;
+    }
+    #vector3{
+        top: -50px;
+        right: -50px;
+        rotate: 18deg;
+    }
+    #vector4{
+        top: -100px;
+        right: -45px;
+        rotate: -18deg;
+    }
+    #vector5{
+        top: -130px;
+        right: -280px;
+        rotate: -30deg;
+    }
+    #vector6{
+        top: -95px;
+        right: -126px;
+        rotate: -25deg;
+    }
+    
+}
+.card-title{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.43);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-number{
+    color: #FFF;
+    font-weight: 600;
+    font-size: 96px;
+    margin-top: 10px;
+}
+
+.card-img{
+    position: absolute;
+    
+}
+
+.vector{
+    height: 400px;
+    width: auto;
+    top: -65px;
+    right:-30px;
+}
+
+#vector1{
+    top: -200px;
+    right: -180px;
+}
+
+#vector4{
+    width: 160px;
+    height: auto;
+    top: -50px;
+    right: -10px;
+}
+
+#vector5{
+    height: 450px;
+    width: auto;
+    top: -100px;
+    right: -280px;
+}
+
+#vector6{
+    top: -80px;
+    right: -100px;
+}
+
+.open{
+    display: block;
+
+}
+
+.grid-2-cols-open{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.dashboard-layout{
+    display: block;
+    padding: 50px 50px 0 50px;
+}
+
+/* TABLES ```````````` */
+.table-admin{
+    margin-top: 20px !important;
+    width: 100%;
+}
+
+.headers{
+    border-bottom: 1px solid #d9d9d9 !important;
+    
+}
+
+.headers th{
+    font-size: calc(1rem + 2px);
+    font-weight: 600;
+}
+
+.action-button{
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+}
+
+.action-red{
+    background-color: #FAA0A0;
+
+}
+
+.action-red:hover,
+.action-red:focus{
+    background-color: #f88c8c;
+}
+
+.action-purple{
+    background-color: #C0C6FF ;
+}
+
+.action-purple:hover,
+.action-purple:focus{
+    background-color: #a9b1ff ;
+}
+
+.action-green{
+    background-color: #AFE1AF;
+    box-shadow: 0px 5px 5px rgba(175, 225, 175, 0.1);
+}
+
+.action-green:hover,
+.action-green:focus{
+    background-color: #a0dba0;
+    box-shadow: 0px 5px 5px rgba(175, 225, 175, 0.3);
+}
+
+.admin-table-row{
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.admin-table-row:hover{
+    background-color: #e0e0e0;
+}
+
+.admin-a{
+    color: #000;
+}
+
+/* VERIFICATION ````````` */
+.verification-imgs{
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #8a75c2;
+}
+
+.verification-img{
+    width: 350px;
+    height: 215px;
+}
+
+.verification-faceid{
+    width: 500px;
+    height: 300px;
+}
+
+.admin-btns{
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.btn-ok{
+    background-color: #8a75c2;
+    box-shadow: 0px 5px 5px rgba(138, 117, 194, 0.1) !important;
+}
+
+.btn-ok:hover,
+.btn-ok:focus{
+    background-color: #806abd;
+    box-shadow: 0px 5px 5px rgba(138, 117, 194, 0.2) !important;
+}
+
+.btn-go{
+    background-color: #C0C6FF;
+    box-shadow: 0px 5px 5px rgba(169, 177, 255, 0.1) 
+}
+
+.btn-go:hover,
+.btn-go:focus{
+    background-color: #a9b1ff;
+    box-shadow: 0px 5px 5px rgba(169, 177, 255, 0.3);
+
+}
+
+.status-green{
+    font-weight: 600;
+    color: #74cb74;
+}
+
+.status-done{
+    font-weight: 600;
+    color: #8c52ff;
+}
+
+.status-purple{
+    font-weight: 600;
+    color: #7e8afe;
+}
+
+.status-gray{
+    font-weight: 600;
+    color: #6c6c6c;
+}
+
+.status-red{
+    font-weight: 600;
+    color: #f88c8c;
+}
+
+.btn-back:hover{
+    transform: translateX(-5px);
+    transition: all 0.5s;
+    color: #000;
+}
+
+.btn-back a:hover{
+    color: #000 !important;
+}
+
+.subtitles{
+    color: var(--sidebar-color);
+}
+
+
+/* ````````````````````` */
+/* MODALS `````````` ``` */
+/* ````````````````````` */
+.modal-header{
+    border-bottom: none !important;
+}
+
+.modal-footer{
+    border-top: none !important;
+}
+
+.modals{
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container_modalReason{
+    width: 500px;
+    height: 420px;
+}
+
+.container_modalBlock{
+    width: 500px;
+    height: 270px;
+}
+
+.container_modalApproveProperty{
+    width: 500px;
+    height: 320px;
+}
+
+.container_modalDisapproveProperty{
+    width: 500px;
+    height: 300px;
+}
+
+.container_modalVerifyLandlord{
+    width: 500px;
+    height: 310px;
+}
+
+.container_modalBlockLandlord{
+    width: 500px;
+    height: 440px;
+}
+
+.container_modalAddType{
+    width: 400px;
+    height: 280px;
+}
+
+.container_modalLogout{
+    position: fixed;
+    width: 500px;
+    height: 250px;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+
+.img-logout{
+    width: 60px;
+} 
+
+.btn-close-logout{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+}
+
+.btn-close-logout:hover,
+.btn-close-logout:focus{
+    background-color: #EDE4FF;
+    box-shadow: none;
+}
+
+.modal-logout-btns{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.btn-del{
+    background-color: #FAA0A0;
+    box-shadow: 0px 5px 5px rgba(248, 140, 140, 0.1) !important;
+}
+
+.btn-del:hover,
+.btn-del:focus{
+    background-color: #f88c8c;
+    box-shadow: 0px 5px 5px rgba(248, 140, 140, 0.3) !important;
+}
+
+.btn-cancel{
+    background-color: #d9d9d9;
+    box-shadow: 0px 5px 5px rgba(206, 206, 206, 0.1) !important;
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus{
+    background-color: #cecece;
+    box-shadow: 0px 5px 5px rgba(206, 206, 206, 0.3) !important;
+}
+
+
+.txtarea-reason{
+    width: 100% !important;
+    height: 140px;
+    border: 2px solid #ede4ff;
+    border-radius: 20px !important;
+    resize: none !important;
+}
+
+.txtarea-reason:hover,
+.txtarea-reason:focus,
+.txtarea-reason:active{
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.1) !important;
+    border: 2px solid #ede4ff !important;
+    outline: none;
+}
+
+.warning-txt{
+    color: #faa0a0;
+}
+
+.btn-add-type a{
+    color: var(--sidebar-color) !important;
+}
+
+.input-prop-type{
+    border-radius: 15px;
+    border: 2px solid #d9d9d9;
+}
+
+.input-prop-type:hover,
+.input-prop-type:focus{
+    border-color: #8C52FF !important;
+    box-shadow: 0 0 0 0.1rem rgba(140, 82, 255, 0.25) !important;
+}
+
+.admin-lease{
+    width: 420px;
+    height: 520px;
+}
+
+.admin-receipt{
+    width: 280px;
+    height: 420px;
+    object-fit: fill;
+}
+
+.btn-back{
+    cursor: pointer !important;
+}
+
+.info-profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.info-profile1{
+    width: 135px;
+    height: 135px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+/* NOTIFICATIONS``````````` */
+.notif-container{
+    width: 750px;
+}
+
+.notification-content:hover{
+    background-color: #EDE4FF;
+    cursor: pointer;
+}
+
+.notif-delete{
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+}
+
+.notif-circle{
+    width: 55px;
+    height: 55px;
+    background-color: #574193;
+}
+
+.notif-img{
+    width: 45px;
+}
+
+.landlord-img{
+    width: 40px;
+    height: 35px;
+}
+
+.lease-img{
+    width: 30px;
+    height: 27px;
+}
+
+.warning-img{
+    width: 30px;
+    height: 30px;
+}
+
+.notif-msg{
+    font-weight: 600;
+}
+
+.a-notif,
+.a-notif:hover,
+.a-notif:active,
+.a-notif:visited{
+    text-decoration: none !important;
+    color: var(--text-color);
+}
+
+.btn-close-notif:active,
+.btn-close-notif:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* MEDIA QUERIES ````` */
+/* XL ````` */
+@media screen and (max-width: 1400px){
+
+    .admin-cards{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 70px;
+    }
+}
+
+/* LG ````` */
+@media screen and (max-width: 1200px){
+    .admin-cards{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    tr {
+        margin: 0 0 1rem 0 !important;
+        border-bottom: 1px solid #D9D9D9;
+    }
+
+    /* tr:nth-child(even) {
+        background: #EDE4FF;
+      } */
+    
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 40% !important;
+	}
+
+	td:before {
+		/* Table header */
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 40%;
+        padding-top: 14px;
+		padding-right: 100px !important;
+		white-space: nowrap;
+        font-weight: 500;
+	}
+	/* Labels */
+		td.admin-landlord-verify:nth-of-type(1):before { content: "No."; }
+		td.admin-landlord-verify:nth-of-type(2):before { content: "Name"; }
+		td.admin-landlord-verify:nth-of-type(3):before { content: "Email"; }
+		td.admin-landlord-verify:nth-of-type(4):before { content: "Date registered"; }
+		td.admin-landlord-verify:nth-of-type(5):before { content: "Mobile No."; }
+		td.admin-landlord-verify:nth-of-type(6):before { content: "Actions"; }
+
+        td.admin-verified-landlord:nth-of-type(1):before { content: "ID no."; }
+        td.admin-verified-landlord:nth-of-type(2):before { content: "Name"; }
+        td.admin-verified-landlord:nth-of-type(3):before { content: "Properties"; }
+        td.admin-verified-landlord:nth-of-type(4):before { content: "Properties Rented"; }
+        td.admin-verified-landlord:nth-of-type(5):before { content: "Date verified"; }
+		td.admin-verified-landlord:nth-of-type(6):before { content: "Complaints"; }
+        td.admin-verified-landlord:nth-of-type(7):before { content: "Actions"; }
+
+        td.admin-banned-landlord:nth-of-type(1):before { content: "ID no."; }
+        td.admin-banned-landlord:nth-of-type(2):before { content: "Name"; }
+        td.admin-banned-landlord:nth-of-type(3):before { content: "Ban reason"; }
+        td.admin-banned-landlord:nth-of-type(4):before { content: "Date banned"; }
+        td.admin-banned-landlord:nth-of-type(5):before { content: "Actions"; }
+        
+        td.admin-renters:nth-of-type(1):before { content: "ID no."; }
+        td.admin-renters:nth-of-type(2):before { content: "Name"; }
+        td.admin-renters:nth-of-type(3):before { content: "Email"; }
+        td.admin-renters:nth-of-type(4):before { content: "Mobile No."; }
+		td.admin-renters:nth-of-type(5):before { content: "Date registered"; }
+        td.admin-renters:nth-of-type(6):before { content: "Warnings"; }
+		td.admin-renters:nth-of-type(7):before { content: "Actions"; }
+
+        td.admin-tovisit:nth-of-type(1):before { content: "Status"; }
+        td.admin-tovisit:nth-of-type(2):before { content: "Property title"; }
+        td.admin-tovisit:nth-of-type(3):before { content: "Property type"; }
+		td.admin-tovisit:nth-of-type(4):before { content: "Landlord ID"; }
+		td.admin-tovisit:nth-of-type(5):before { content: "Date created"; }
+		td.admin-tovisit:nth-of-type(6):before { content: "Actions"; }
+
+        td.admin-listed-prop:nth-of-type(1):before { content: "No."; }
+        td.admin-listed-prop:nth-of-type(2):before { content: "Property ID"; }
+        td.admin-listed-prop:nth-of-type(3):before { content: "Property type"; }
+        td.admin-listed-prop:nth-of-type(4):before { content: "Property title"; }
+		td.admin-listed-prop:nth-of-type(5):before { content: "Landlord ID"; }
+        td.admin-listed-prop:nth-of-type(6):before { content: "Date listed"; }
+		td.admin-listed-prop:nth-of-type(7):before { content: "Actions"; }
+
+        td.admin-apps:nth-of-type(1):before { content: "Application ID"; }
+        td.admin-apps:nth-of-type(2):before { content: "Property info"; }
+        td.admin-apps:nth-of-type(3):before { content: "Landlord"; }
+        td.admin-apps:nth-of-type(4):before { content: "Renter"; }
+		td.admin-apps:nth-of-type(5):before { content: "Status"; }
+        
+        td.admin-leases:nth-of-type(1):before { content: "Lease ID"; }
+        td.admin-leases:nth-of-type(2):before { content: "Property info"; }
+        td.admin-leases:nth-of-type(3):before { content: "Landlord"; }
+        td.admin-leases:nth-of-type(4):before { content: "Lease start"; }
+		td.admin-leases:nth-of-type(5):before { content: "Lease end"; }
+        td.admin-leases:nth-of-type(5):before { content: "Actions"; }
+        
+        
+
+        
+
+}
+
+/* MD ````` */
+@media screen and (max-width: 992px){
+    .admin-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .home-section{
+        width: 100%;
+    }
+
+
+}
+
+/* SM ````````` */
+@media only screen and (max-width: 768px){
+    .verification-faceid{
+        width: 350px;
+        height: 215px;
+    }
+
+    .modals{
+        width: 420px;
+    }
+
+    .container_modalReason{
+        width: 420px;
+        height: 420px;
+    }
+}
+

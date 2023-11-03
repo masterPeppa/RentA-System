@@ -1,0 +1,527 @@
+
+:root{
+    --main-color: #8C52FF;
+    --text-color: #2F234F;
+    --font-14: 14px;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+.modal-open, body{
+    overflow: inherit !important;
+}
+
+.modal-footer{
+    border-top: none !important;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+body{
+    color: var(--text-color) ;
+    font-size: var(--font-14);
+}
+
+.active{
+    color: var(--main-color) !important;
+}
+
+.active-dropdown{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.container-no-applicants,
+.container-manage-applicants,
+.container-approved-applicants,
+.container-no-approved-applicants{
+    margin-top: 65px !important;
+}
+
+.container-records{
+    margin-top: 65px !important;
+}
+
+.total-applicants{
+    font-weight: 600;
+}
+
+/* TABLE ```````` */
+.table-manage-applicants{
+    margin-top: 50px !important;
+    width: 100%;
+}
+
+.table-proof{
+    margin-top: 30px !important;
+}
+
+.title{
+    font-weight: 700 !important;
+}
+
+.headers{
+    border-bottom: 1px solid #d9d9d9 !important;
+}
+
+.headers th{
+    font-size: calc(1rem + 2px);
+    font-weight: 600;
+}
+
+.actionIcon{
+    font-size: 15px !important;
+}
+
+.btns-manage-applicants{
+    background-color: #C0C6FF;
+    border-radius: 20px;
+    font-size: .9rem;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px rgba(169, 177, 255, 0.1) !important;
+}
+
+.btns-manage-applicants:hover,
+.btns-manage-applicants:focus{
+    background-color: #a9b1ff;
+    box-shadow: 0px 5px 5px rgba(169, 177, 255, 0.3) !important;
+}
+
+.btns-manage-applicants:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-message{
+    background-color: #dccbff;
+    box-shadow: 0px 5px 5px rgba(220, 203, 255, 0.1) !important;
+}
+
+.btn-message:hover,
+.btn-message:focus{
+    background-color: #ccb3ff;
+    box-shadow: 0px 5px 5px rgba(220, 203, 255, 0.3) !important;
+}
+
+.btn-set{
+    width: 75%;
+    background-color: #AFE1AF;
+    box-shadow: 0px 5px 5px rgba(175, 225, 175, 0.1) !important;
+}
+
+.btn-set:hover{
+    background-color: #a0dba0;
+    box-shadow: 0px 5px 5px rgba(175, 225, 175, 0.3) !important;
+}
+
+/* MODAL FOR APPROVE ``````` */
+.container_modalApprove,
+.container_modalReject{
+    position: fixed;
+    width: 600px;
+    height: 380px;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.img-warning{
+    width: 70px;
+}
+
+.btn-close{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+}
+
+.btn-close:hover,
+.btn-close:focus{
+    /* background-color: #EDE4FF;
+    box-shadow: none; */
+}
+
+.div-manage{
+    padding: 0 100px !important;
+}
+
+.modal-btns{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.btn-confirm{
+    background-color: #C0C6FF;
+}
+
+.btn-confirm:hover{
+    background-color: #a9b1ff;
+    box-shadow: 0px 5px 5px rgba(192, 198, 255, 0.3) !important;
+}
+
+.btn-reject{
+    background-color: #FAA0A0;
+}
+
+.btn-reject:hover{
+    background-color: #f88c8c;
+    box-shadow: 0px 5px 5px rgba(248, 140, 140, 0.3) !important;
+}
+
+.btn-cancel{
+    background-color: #d9d9d9;
+}
+
+.btn-cancel:hover{
+    background-color: #cecece;
+    box-shadow: 0px 5px 5px rgba(206, 206, 206, 0.3) !important;
+}
+
+/* STATUS ````````` */
+
+.status-signing,
+.status-red span,
+.status-red{
+    color: #f88c8c;
+    font-weight: 600;
+}
+
+.status-signed,
+.status-purple{
+    color: #939dff;
+    font-weight: 600;
+}
+
+.status-moving-in,
+.status-green{
+    color: #74cb74;
+    font-weight: 600;
+}
+
+.status-cancelled,
+.status-gray{
+    color: #838383;
+    font-weight: 600;
+}
+
+.status-residing,
+.status-done{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.txtbox-date{
+    width: 35%;
+    border-radius: 10px;
+    outline: none;
+    background-color: #EDE4FF;
+    border: 1px solid var(--main-color);
+    border-style: none solid solid none;
+}
+
+.btn-edit{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.btn-edit:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.receipt-img{
+    width: 380px !important;
+    height: 550px !important;
+    object-fit: fill;
+    border-radius: 20px;
+    border: 5px solid #ede4ff;
+    box-shadow: rgba(140, 82, 255, 0.24) 0px 3px 8px;
+}
+
+.btns{
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.uploaded-lease-view{
+    width: 500px;
+    height: 630px;
+    border: 5px solid #EDE4FF;
+    background-color: #EDE4FF;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.refresh-btn{
+    font-size: 14px;
+    color: #8c52ff;
+}
+
+
+.refresh-btn:focus,
+.refresh-btn:hover{
+    box-shadow: none !important;
+    color: #8548ff;
+}
+
+.btn_listProperty{
+    font-size: 16px !important;
+}
+
+.payment-confirmation{
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.payment-confirmed{
+    background-color: #ede4ff;
+}
+
+.payment-not-confirmed{
+    background-color: #FAA0A0;
+}
+
+.div-receipt-btns{
+    width: 380px ;
+}
+
+.modals{
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container_modalReason{
+    width: 500px;
+    height: 450px;
+}
+
+.modal-extend{
+    width: 450px;
+    height: 270px;
+}
+
+.modal-l-extend{
+    width: 450px;
+    height: 430px;
+}
+
+.txtarea-reason{
+    width: 100% !important;
+    height: 140px;
+    border: 2px solid #ede4ff;
+    border-radius: 20px !important;
+    resize: none !important;
+}
+
+.txtarea-reason:hover,
+.txtarea-reason:focus,
+.txtarea-reason:active{
+    box-shadow: 0px 5px 5px rgba(140, 82, 255, 0.1) !important;
+    border: 2px solid #ede4ff !important;
+    outline: none;
+}
+
+.admin-btns{
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.back-btn:hover{
+    transition: transform 0.3s;
+    transform: translateX(-5px);
+    cursor: pointer;
+}
+
+.on-time{
+    
+    color: #8C52FF;
+}
+
+.late{
+    color: #f77979;
+}
+
+.chev-back{
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.chev-back:hover{
+    background-color: #ede4ff;
+    color: #000;
+}
+
+.title-prev{
+    color: #59575a;
+    cursor: pointer;
+}
+
+.title-prev:hover{
+    color: var(--text-color);
+}
+
+.btn-close-notif:hover,
+.btn-close-notif:focus{
+    background-color: none !important;
+    box-shadow: none;
+    outline: none;
+}
+
+/* MEDIA QUERIES ````````` */
+
+/* LG `````` */
+@media screen and (max-width: 1200px){
+
+    .btns-manage-applicants{
+        font-size: 12px;
+    }
+
+}
+
+/* MD `````` */
+@media screen and (max-width: 992px){
+
+    .btns-manage-applicants{
+        font-size: .9rem;
+    }
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    tr {
+        margin: 0 0 1rem 0 !important;
+        border-bottom: 1px solid #D9D9D9;
+    }
+
+    /* tr:nth-child(even) {
+        background: #EDE4FF;
+      } */
+    
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 40% !important;
+	}
+
+	td:before {
+		/* Table header */
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 40%;
+        padding-top: 14px;
+		padding-right: 100px !important;
+		white-space: nowrap;
+        font-weight: 500;
+	}
+	/* Labels */
+		td.manage-applicants-header:nth-of-type(1):before { content: "Property info"; }
+		td.manage-applicants-header:nth-of-type(2):before { content: "First name"; }
+		td.manage-applicants-header:nth-of-type(3):before { content: "Last name"; }
+		td.manage-applicants-header:nth-of-type(4):before { content: "Mobile no."; }
+		td.manage-applicants-header:nth-of-type(5):before { content: "Email"; }
+		td.manage-applicants-header:nth-of-type(6):before { content: "Actions"; }
+
+        td.manage-lease-header:nth-of-type(1):before { content: "Status"; }
+		td.manage-lease-header:nth-of-type(2):before { content: "Property info"; }
+		td.manage-lease-header:nth-of-type(3):before { content: "Name"; }
+		td.manage-lease-header:nth-of-type(4):before { content: "Date sent"; }
+		td.manage-lease-header:nth-of-type(5):before { content: "Date signed"; }
+		td.manage-lease-header:nth-of-type(6):before { content: "Actions"; }
+
+        td.manage-payment-header:nth-of-type(1):before { content: "Status"; }
+        td.manage-payment-header:nth-of-type(2):before { content: "Property info"; }
+		td.manage-payment-header:nth-of-type(3):before { content: "Name"; }
+		td.manage-payment-header:nth-of-type(4):before { content: "Payment type"; }
+		td.manage-payment-header:nth-of-type(5):before { content: "Amount"; }
+        td.manage-payment-header:nth-of-type(6):before { content: "Date Paid"; }
+		td.manage-payment-header:nth-of-type(7):before { content: "Actions"; }
+
+        td.manage-res-header:nth-of-type(1):before { content: "Status"; }
+        td.manage-res-header:nth-of-type(2):before { content: "Name"; }
+		td.manage-res-header:nth-of-type(3):before { content: "Property info"; }
+        td.manage-res-header:nth-of-type(4):before { content: "Lease term"; }
+		td.manage-res-header:nth-of-type(5):before { content: "Move-in date"; }
+		td.manage-res-header:nth-of-type(6):before { content: "Lease end"; }
+
+        td.manage-res-rent:nth-of-type(1):before { content: "ID No."; }
+        td.manage-res-rent:nth-of-type(2):before { content: "Name"; }
+		td.manage-res-rent:nth-of-type(3):before { content: "Property info"; }
+        td.manage-res-rent:nth-of-type(4):before { content: "Lease start"; }
+		td.manage-res-rent:nth-of-type(5):before { content: "Lease end"; }
+		td.manage-res-rent:nth-of-type(6):before { content: "Due every"; }
+		td.manage-res-rent:nth-of-type(7):before { content: "Actions"; }
+
+        td.manage-res-record:nth-of-type(1):before { content: "Month"; }
+        td.manage-res-record:nth-of-type(2):before { content: "Amount paid"; }
+		td.manage-res-record:nth-of-type(3):before { content: "Date paid"; }
+        td.manage-res-record:nth-of-type(4):before { content: "Receipt no."; }
+		td.manage-res-record:nth-of-type(5):before { content: "Confirmation"; }
+		td.manage-res-record:nth-of-type(6):before { content: "Balance"; }
+		td.manage-res-record:nth-of-type(7):before { content: "Actions"; }
+        
+	}
+
+
+
+/* SM ````````` */
+@media only screen and (max-width: 768px){
+
+    .container_modalApprove,
+    .container_modalReject{
+        width: 420px;
+        height: 410px;
+    }
+
+    .div-approve{
+        padding: 0 5px !important;
+    }
+
+    .btn-set,
+    .txtbox-date{
+        width: 100%;
+    }
+
+    .uploaded-lease-view{
+        width: 450px;
+        height: 580px;
+    }
+
+    .modals{
+        width: 420px;
+    }
+
+}
+
+#depositInput{
+    visibility: hidden;
+}
+
+.inputAmount{
+    visibility: hidden;
+}
